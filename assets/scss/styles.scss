@@ -280,8 +280,6 @@ body {
 //~~ Modal
 .modal_container {
   animation: fadeOutDown .4s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
   background: rgba(0, 0, 0, 0.7);
   bottom: 0;
   left: 0;
@@ -292,18 +290,16 @@ body {
 }
 .modal_container.show {
   animation: fadeInUp .4s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
   opacity: 1;
   top: 0;
 }
 @keyframes fadeInUp {
-  from { opacity: 0.5; top: 100%; };
-  to { opacity: 1; top: 0; };
+  0% { opacity: 0.5; top: 100%; };
+  100% { opacity: 1; top: 0; };
 }
 @keyframes fadeOutDown {
-  from { opacity: 1; top: 0; };
-  to { opacity: 0.5; top: 100%; };
+  0% { opacity: 1; top: 0; };
+  100% { opacity: 0.5; top: 100%; };
 }
 
 .modal_content {
