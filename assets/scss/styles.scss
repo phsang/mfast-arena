@@ -279,26 +279,31 @@ body {
 
 //~~ Modal
 .modal_container {
-  animation: fadeOutDown .5s;
+  animation: fadeOutDown .4s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   background: rgba(0, 0, 0, 0.7);
   bottom: 0;
   left: 0;
+  opacity: 0.5;
   position: fixed;
   right: 0;
   top: 100%;
 }
 .modal_container.show {
-  animation: fadeInUp .5s;
+  animation: fadeInUp .4s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   opacity: 1;
   top: 0;
 }
 @keyframes fadeInUp {
-  from { opacity: 0; top: 100%; };
+  from { opacity: 0.5; top: 100%; };
   to { opacity: 1; top: 0; };
 }
 @keyframes fadeOutDown {
   from { opacity: 1; top: 0; };
-  to { opacity: 0; top: 100%; };
+  to { opacity: 0.5; top: 100%; };
 }
 
 .modal_content {
@@ -590,7 +595,7 @@ body {
   border-radius: 6px;
   display: none;
   margin-top: 7px;
-  padding: 14px;
+  padding: 16px 14px 12px;
 }
 
 .group_level__item .reward_top dl {
@@ -683,10 +688,6 @@ body {
   color: #c3cfff;
   font-size: 16px;
   font-weight: 500;
-}
-
-.group_level__item {
-  padding: 0 12px;
 }
 
 .top_10_player__list {

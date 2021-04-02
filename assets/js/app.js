@@ -17,8 +17,17 @@ var arena = (function () {
     $('.btn_close_modal, .js-modal').click(function() {
       let _dataTabs = $(this).attr('data-tabs');
       let _translateX = _wid * (parseInt(_dataTabs) - 1);
-      $('.modal_content').css('transform', 'translateX(-' + _translateX + 'px)');
-      $('.js-modal_arena').toggleClass('show');
+      $.when(
+        $('.modal_content').css({
+          'transform': 'translateX(-' + _translateX + 'px)',
+          'transition': '0'
+        })
+      ).then(function() {
+        $('.modal_content').css({
+          'transition': '.3s'
+        })
+        $('.js-modal_arena').toggleClass('show');
+      });
     });
     $('.js-tabs_modals').click(function() {
       let _dataTabs = $(this).attr('data-tabs');
