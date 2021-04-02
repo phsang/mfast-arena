@@ -1,0 +1,46 @@
+$PersianGreen: #00A983;
+$Astronaut: #424d6c;
+$Endeavour: #233A95;
+$GhostWhite: #eff2ff;
+$Watercourse: #00863d;
+$KellyGreen: #39b818;
+$NavyBlue: #007dca;
+$TenneTawny: #d66100;
+$FireEngineRed: #bc0f23;
+$MidnightExpress: #24253d;
+$ElectricIndigo: #9013FE;
+$Olive: #417505;
+$clDisable: #c4c7d8;
+$StormGrey: #75768b;
+$DarkGoldenrod: #D28607;
+$_trans3: .3s;
+
+$CarrotOrange: #E59B19;
+
+.cl_carrot_orange {
+  color: $CarrotOrange;
+}
+
+
+.persian_green { color: $PersianGreen; }
+.electric_indigo { color: $ElectricIndigo; }
+.olive { color: $Olive; }
+.cl_active { color: $Watercourse; }
+.cl_active2 {
+  color: $KellyGreen !important;
+  transition: $_trans3;
+  &:hover {
+    color: #1c8d00;
+    transition: $_trans3;
+  }
+}
+.cl_reactive { color: $NavyBlue; }
+.cl_waiting { color: $TenneTawny !important; }
+.cl_sales { color: $Endeavour; }
+.cl_lost { color: $FireEngineRed !important; }
+.cl_gray { color: gray; }
+.font500 { font-weight: 500; }
+.font600 { font-weight: 600; }
+.dark_goldenrod {
+  color: $DarkGoldenrod;
+}

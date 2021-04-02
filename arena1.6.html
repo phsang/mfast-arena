@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</head>
+
+<body>
+  <div class="arena_program__container">
+    <div class="arena_content__program player_level_info__page">
+      <div class="player_medal">
+        <div class="player_medal__content">
+          <img src="./assets/images/medal-huyen-thoai.svg" alt="Huyền thoại" width="220">
+          <div class="player_medal__info">
+            <img src="./assets/images/text-huyen-thoai.svg" alt="Huyền thoại">
+            <div class="star_level js-star_level" data-star="1"></div>
+            <span>Độc cô cầu bại</span>
+          </div>
+          <p>Chúc mừng bạn đã thăng lên cấp bậc <span class="font600">Huyền thoại - 1 sao.</span> trong đấu trường MFast</p>
+        </div>
+      </div>
+      <div class="level_up__reward">
+        <span class="reward_value">+ 1,000,000 đ</span>
+        <span class="reward_note font500">Vào ví tích lũy MFast</span>
+      </div>
+      <div class="link_foot_submit">
+        <a href="#" class="btn_link_submit">Chi tiết thứ hạng</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    _arena.processStar();
+  </script>
+</body>
+
+</html>

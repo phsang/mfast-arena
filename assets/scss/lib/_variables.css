@@ -1,0 +1,61 @@
+.cl_carrot_orange {
+  color: #E59B19;
+}
+
+.persian_green {
+  color: #00A983;
+}
+
+.electric_indigo {
+  color: #9013FE;
+}
+
+.olive {
+  color: #417505;
+}
+
+.cl_active {
+  color: #00863d;
+}
+
+.cl_active2 {
+  color: #39b818 !important;
+  transition: 0.3s;
+}
+
+.cl_active2:hover {
+  color: #1c8d00;
+  transition: 0.3s;
+}
+
+.cl_reactive {
+  color: #007dca;
+}
+
+.cl_waiting {
+  color: #d66100 !important;
+}
+
+.cl_sales {
+  color: #233A95;
+}
+
+.cl_lost {
+  color: #bc0f23 !important;
+}
+
+.cl_gray {
+  color: gray;
+}
+
+.font500 {
+  font-weight: 500;
+}
+
+.font600 {
+  font-weight: 600;
+}
+
+.dark_goldenrod {
+  color: #D28607;
+}

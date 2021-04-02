@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="arena_container">
+    <div class="arena_over__head">
+      <div class="over_head__container">
+        <div class="over_head__category">
+          <ul class="category_list">
+            <li class="category_item">
+              <a href="#"><img src="./assets/images/ico-money.svg" alt="money"></a>
+            </li>
+            <li class="category_item">
+              <a href="#"><img src="./assets/images/ico-profile.svg" alt="profile"></a>
+            </li>
+            <li class="category_item">
+              <a href="#"><img src="./assets/images/ico-user-list.svg" alt="list user"></a>
+            </li>
+            <li class="category_item">
+              <a href="#"><img src="./assets/images/ico-book.svg" alt="book"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="over_head__notification">
+          <ul class="notification_list">
+            <li class="notification_item">
+              <a href=""><img src="./assets/images/ico-mfast.svg" alt="mfast"></a>
+            </li>
+            <li class="notification_item">
+              <a href=""><img src="./assets/images/ico-notification.svg" alt="notification"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="arena_content">
+      <div class="service_list">
+        <h2>Tiện ích bán hàng</h2>
+        <a href="" class="service_view__all">Tất cả</a>
+        <ul class="service_list__content">
+          <li class="service_list__item">
+            <a href="">
+              <img src="./assets/images/ico-staff-card.svg" alt="thẻ nhân viên">
+              <span>Thẻ<br>nhân viên</span>
+            </a>
+          </li>
+          <li class="service_list__item">
+            <a href="">
+              <img src="./assets/images/ico-bag.svg" alt="Ứng tuyển cấp code">
+              <span>Ứng tuyển<br>cấp code</span>
+            </a>
+          </li>
+          <li class="service_list__item">
+            <a href="">
+              <img src="./assets/images/ico-profile-active.svg" alt="Check CIC khách hàng">
+              <span>Check CIC khách hàng</span>
+            </a>
+          </li>
+          <li class="service_list__item">
+            <a href="">
+              <img src="./assets/images/ico-profile-active.svg" alt="Check CIC khách hàng">
+              <span>Check CIC khách hàng</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tournaments_program">
+        <h2>Chương trình thi đua</h2>
+        <a href="" class="service_view__all">Tất cả</a>
+        <ul class="tournaments_program__list">
+          <li class="tournaments_program__item">
+            <a href=""><img src="./assets/images/img-dau-truong-mfast.png" alt="đấu trường mfast"></a>
+          </li>
+          <li class="tournaments_program__item">
+            <a href=""><img src="./assets/images/img-dau-truong-mfast.png" alt="đấu trường mfast"></a>
+          </li>
+          <li class="tournaments_program__item">
+            <a href=""><img src="./assets/images/img-dau-truong-mfast.png" alt="đấu trường mfast"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="service_list">
+        <h2>Mua sắm</h2>
+        <a href="" class="service_view__all">Tất cả</a>
+        <ul class="service_list__content">
+          <li class="service_list__item">
+            <a href="">
+              <img src="./assets/images/ico-phone-card.svg" alt="Mua thẻ cào điện thoại">
+              <span>Mua thẻ cào điện thoại</span>
+            </a>
+          </li>
+          <li class="service_list__item">
+            <a href="">
+              <img src="./assets/images/ico-phone-money.svg" alt="Nạp tiền ĐT trả trước">
+              <span>Nạp tiền điện thoại trả trước</span>
+            </a>
+          </li>
+          <li class="service_list__item">
+            <a href="">
+              <img src="./assets/images/ico-cup-of-cafe.svg" alt="Bột yến mạch">
+              <span>Bột<br>yến mạch</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $('.service_list__content').slick({
+        arrows: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $('.tournaments_program__list').slick({
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+</body>
+
+</html>

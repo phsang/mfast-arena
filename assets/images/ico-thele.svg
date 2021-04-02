@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AC3BA6CC-7D8F-4EEB-911F-CF7C3C7FE89A</title>
+    <defs>
+        <radialGradient cx="50%" cy="39.4782016%" fx="50%" fy="39.4782016%" r="56.4766183%" gradientTransform="translate(0.500000,0.394782),scale(0.983607,1.000000),rotate(59.921905),translate(-0.500000,-0.394782)" id="radialGradient-1">
+            <stop stop-color="#6C8AFF" offset="0%"></stop>
+            <stop stop-color="#233A95" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="49.999258%" cy="49.8324078%" fx="49.999258%" fy="49.8324078%" r="38.9051626%" gradientTransform="translate(0.499993,0.498324),scale(0.983607,1.000000),translate(-0.499993,-0.498324)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFBF5" offset="13%"></stop>
+            <stop stop-color="#FEF1DA" offset="36%"></stop>
+            <stop stop-color="#FEE1AE" offset="65%"></stop>
+            <stop stop-color="#FDCB73" offset="99%"></stop>
+            <stop stop-color="#FDCA71" offset="100%"></stop>
+        </radialGradient>
+        <path d="M13.3333333,0 C20.7066667,0 26.6666667,5.97466667 26.6666667,13.3333333 C26.6666667,20.6946667 20.7066667,26.6666667 13.3333333,26.6666667 C5.97333333,26.6666667 0,20.6946667 0,13.3333333 C0,5.97466667 5.97333333,0 13.3333333,0 Z M13.3333333,17.2413333 C12.6933333,17.2413333 12.1733333,17.7613333 12.1733333,18.4013333 C12.1733333,19.0413333 12.6933333,19.5746667 13.3466667,19.5746667 C13.9866667,19.5746667 14.5066667,19.0413333 14.5066667,18.4013333 C14.5066667,17.7613333 13.9866667,17.2413333 13.3333333,17.2413333 Z M13.3333333,7.10666667 C12.6933333,7.10666667 12.16,7.64133333 12.16,8.28 L12.16,8.28 L12.16,14.1733333 C12.16,14.8146667 12.6933333,15.3333333 13.3333333,15.3333333 C13.9733333,15.3333333 14.4933333,14.8146667 14.4933333,14.1733333 L14.4933333,14.1733333 L14.4933333,8.28 C14.4933333,7.64133333 13.9733333,7.10666667 13.3333333,7.10666667 Z" id="path-3"></path>
+        <filter x="-3.8%" y="-3.8%" width="111.2%" height="115.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.22745098   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="0.0%" y="0.0%" width="103.7%" height="107.5%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.301960784   0 0 0 0 0.407843137   0 0 0 0 0.823529412  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Master-mfast" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Master-Mfast-1.1" transform="translate(-36.000000, -634.000000)">
+            <g id="Master/-button/-rule" transform="translate(36.000000, 634.000000)">
+                <g id="Group-5">
+                    <ellipse id="Oval" fill="url(#radialGradient-1)" fill-rule="nonzero" cx="29.5526696" cy="29.0681996" rx="29.5526696" ry="29.0681996"></ellipse>
+                    <path d="M4.2070844,18.7937712 C15.5329116,4.75474756 27.21533,0.00412590348 39.2543395,4.54190618 C47.7886611,7.75868874 56.2390056,16.2797487 57.4633853,29.0124089 C57.7985862,32.4982554 56.4946819,38.3472912 53.5516722,46.5595165 C54.9697093,37.5090736 54.6367687,29.8972998 52.5528504,23.724195 C49.4269729,14.4645379 42.5995478,9.10665218 37.5916509,7.82117282 C32.5837541,6.53569346 24.4570317,5.66726134 15.8325466,9.74058955 C13.103502,11.0295122 9.22834797,14.0472394 4.2070844,18.7937712 Z" id="Path-2" fill="#233A95"></path>
+                    <path d="M29.5526696,1.36257185 C45.8741583,1.36257185 59.1053391,14.3768481 59.1053391,30.4307714 C59.1053391,46.4846947 45.8741583,59.498971 29.5526696,59.498971 C13.2311808,59.498971 0,46.4846947 0,30.4307714 C0,14.3768481 13.2311808,1.36257185 29.5526696,1.36257185 Z M29.5526696,4.08771556 C14.7613204,4.08771556 2.77056277,15.8819034 2.77056277,30.4307714 C2.77056277,44.9796394 14.7613204,56.7738273 29.5526696,56.7738273 C44.3440187,56.7738273 56.3347763,44.9796394 56.3347763,30.4307714 C56.3347763,15.8819034 44.3440187,4.08771556 29.5526696,4.08771556 Z" id="Combined-Shape" fill="#A35611" fill-rule="nonzero"></path>
+                    <path d="M29.5526696,0 C45.8741583,0 59.1053391,13.0142762 59.1053391,29.0681996 C59.1053391,45.1221229 45.8741583,58.1363991 29.5526696,58.1363991 C13.2311808,58.1363991 0,45.1221229 0,29.0681996 C0,13.0142762 13.2311808,0 29.5526696,0 Z M29.5526696,2.72514371 C14.7613204,2.72514371 2.77056277,14.5193316 2.77056277,29.0681996 C2.77056277,43.6170676 14.7613204,55.4112554 29.5526696,55.4112554 C44.3440187,55.4112554 56.3347763,43.6170676 56.3347763,29.0681996 C56.3347763,14.5193316 44.3440187,2.72514371 29.5526696,2.72514371 Z" id="Combined-Shape-Copy" fill="url(#radialGradient-2)" fill-rule="nonzero"></path>
+                </g>
+                <g id="Iconly/Bold/Document" transform="translate(16.000000, 16.000000)" fill-rule="nonzero">
+                    <g id="Info-Circle" transform="translate(0.666800, 0.665733)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#D7DFFF" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

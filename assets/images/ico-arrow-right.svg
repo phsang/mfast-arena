@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="15px" viewBox="0 0 10 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D348C95C-8F55-463A-B723-0F2D94D255EA</title>
+    <defs>
+        <path d="M0.203330751,13.131925 C-0.0446165763,12.8863188 -0.0668409502,12.5008652 0.142385317,12.231951 L0.205189775,12.1616929 L6.31022463,6.1811857 C6.58350116,5.91325166 7.02501936,5.91416612 7.29643687,6.1830146 C7.43121611,6.3165244 7.5,6.49209892 7.5,6.66675899 C7.5,6.81383313 7.45223341,6.96027224 7.35723814,7.0822625 L7.29457785,7.15233228 L1.18954299,13.1328394 C0.91626646,13.4007735 0.474748257,13.399859 0.203330751,13.131925 Z M0.205282727,1.17255667 C-0.0689233153,0.904622634 -0.0670642912,0.470258581 0.203423703,0.202324544 C0.452223083,-0.0441199025 0.843954299,-0.0654253323 1.11800757,0.138408255 L1.18963594,0.199581192 L5.24416731,4.17104031 C5.38080558,4.3045501 5.44958947,4.48103908 5.44958947,4.6566136 C5.44958947,4.83127367 5.38080558,5.00684819 5.24602634,5.14035799 C4.99722696,5.38680243 4.60549574,5.40810786 4.33144246,5.20427428 L4.2598141,5.14310134 L0.205282727,1.17255667 Z" id="path-1"></path>
+        <filter x="-6.7%" y="-3.8%" width="126.7%" height="107.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.137254902   0 0 0 0 0.22745098   0 0 0 0 0.584313725  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-0.0%" y="-0.0%" width="113.3%" height="100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.301960784   0 0 0 0 0.407843137   0 0 0 0 0.823529412  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Master-mfast" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Master-Mfast-1.1" transform="translate(-135.000000, -196.000000)" fill-rule="nonzero">
+            <g id="Group-9" transform="translate(16.000000, 52.000000)">
+                <g id="Group-2" transform="translate(12.000000, 116.000000)">
+                    <g id="Master/next" transform="translate(107.000000, 28.000000)">
+                        <g id="Arrow---Right-2" transform="translate(0.250000, 0.333333)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#D7DFFF" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="343px" height="46px" viewBox="0 0 343 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>C172E099-E17C-43CC-8A32-52A31A237B2B</title>
+    <defs>
+        <radialGradient cx="50%" cy="21.1815481%" fx="50%" fy="21.1815481%" r="77.7150384%" gradientTransform="translate(0.500000,0.211815),scale(0.111463,1.000000),rotate(90.000000),scale(1.000000,5.138751),translate(-0.500000,-0.211815)" id="radialGradient-1">
+            <stop stop-color="#6C8AFF" offset="0%"></stop>
+            <stop stop-color="#233A95" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="49.999258%" cy="49.8324078%" fx="49.999258%" fy="49.8324078%" r="295.041682%" gradientTransform="translate(0.499993,0.498324),scale(0.129702,1.000000),translate(-0.499993,-0.498324)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFBF5" offset="13%"></stop>
+            <stop stop-color="#FEF1DA" offset="36%"></stop>
+            <stop stop-color="#FEE1AE" offset="65%"></stop>
+            <stop stop-color="#FDCB73" offset="99%"></stop>
+            <stop stop-color="#FDCA71" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Master-mfast" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Master-Mfast-1.7" transform="translate(-16.000000, -619.000000)" fill-rule="nonzero">
+            <g id="Master/-button/-another" transform="translate(16.000000, 619.000000)">
+                <polygon id="Path" fill="url(#radialGradient-1)" points="317.881043 41.0615372 23.2187385 41.0615372 5.55548358 22.6849572 23.2187385 4.30678737 317.881043 4.30678737 335.303739 25.1254252"></polygon>
+                <polygon id="Path" fill="#233A95" points="317.881043 8.14935108 335.303739 25.9884192 337.84341 22.6841623 317.881043 4.30678737 23.2187385 4.30678737 5.55548358 22.6849572 7.40152448 24.6054441 23.2187385 8.14935108"></polygon>
+                <path d="M342.141431,24.8512866 L318.932824,1.44036521 L21.3278487,1.44036521 L0,23.6293026 L21.3278487,45.8166502 L319.668754,45.8166502 L342.141431,24.8512866 Z M22.7138261,42.0058826 L5.04478418,23.6293026 L22.7138261,5.24636335 L317.370344,5.24636335 L336.562804,23.6293026 L321.088088,42.0058826 L22.7138261,42.0058826 Z" id="Shape" fill="#A35611"></path>
+                <path d="M318.932824,0 L21.3278487,0 L0,22.1873476 L21.3278487,44.3762849 L318.932824,44.3762849 L342.141431,22.9083251 L318.932824,0 Z M317.370344,3.81553699 L337.84341,22.6841623 L317.370344,40.5655174 L22.7138261,40.5655174 L5.04478418,22.1873476 L22.7138261,3.81553699 L317.370344,3.81553699 Z" id="Shape" fill="url(#radialGradient-2)"></path>
+                <polygon id="Path" fill="#A35611" points="3.55787751e-14 22.1873476 3.55787751e-14 23.6293026 0.692988707 22.9075302"></polygon>
+                <polygon id="Path-Copy" fill="#A35611" transform="translate(341.613989, 23.879806) scale(-1, 1) translate(-341.613989, -23.879806) " points="341.086548 22.9083251 341.086548 24.8512866 342.141431 23.8798059"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

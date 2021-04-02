@@ -1,0 +1,57 @@
+.cl_active {
+  color: $Watercourse;
+}
+
+.cl_active2 {
+  color: $KellyGreen;
+}
+
+.cl_reactive {
+  color: $NavyBlue;
+}
+
+.cl_waiting {
+  color: $TenneTawny;
+}
+
+.cl_sales {
+  color: $Endeavour;
+}
+
+.rec_bg {
+  background: $GhostWhite;
+}
+
+.cl_lost {
+  color: $FireEngineRed;
+}
+
+.cl_gray {
+  color: gray;
+}
+
+.cl_blue {
+  color: $Endeavour;
+}
+
+.cl_main_light {
+  color: $StormGrey;
+}
+
+.persian_green { color: $PersianGreen; }
+.electric_indigo { color: $ElectricIndigo; }
+.olive { color: $Olive; }
+.cl_active { color: $Watercourse; }
+.cl_active2 {
+  color: $KellyGreen;
+  transition: $_trans3;
+  &:hover {
+    color: #1c8d00;
+    transition: $_trans3;
+  }
+}
+.cl_reactive { color: $NavyBlue; }
+.cl_waiting { color: $TenneTawny; }
+.cl_sales { color: $Endeavour; }
+.cl_lost { color: $FireEngineRed; }
+.cl_gray { color: gray; }
