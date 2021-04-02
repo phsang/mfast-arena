@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</head>
+
+<body>
+  <div class="arena_program__container">
+    <div class="arena_head">
+      <div class="player_info__container">
+        <div class="player_info__head">
+          <button type="button" class="btn_arena__back"><img src="./assets/images/btn-arena-back.png" alt="button arena back" width="80"></button>
+          <a href="javascript:void(0)"><img src="./assets/images/ico-volume.svg" alt="icon volume"></a>
+        </div>
+        <div class="player_info__general">
+          <div class="player_avatar">
+            <div class="player_avatar__zone">
+              <img src="./assets/images/ava-user1.png" alt="avatar user 1">
+            </div>
+            <span class="player_username">Cao Phương Đức</span>
+          </div>
+          <div class="player_info">
+            <div class="player_income">
+              <span>Thu nhập trong tháng:</span>
+              <span class="player_val">100,000,000 đ <img src="./assets/images/ico-arrow-right.svg" alt=""></span>
+              <span>Tính đến 00:00 12/03</span>
+            </div>
+            <div class="player_level">
+              <span>Xếp hạng:</span>
+              <span class="player_val">2 <img src="./assets/images/ico-arrow-right.svg" alt=""></span>
+              <span class="player_group safe_group">Nhóm an toàn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arena_content__program">
+      <div class="player_medal">
+        <div class="player_medal__content">
+          <img src="./assets/images/medal-huyen-thoai.svg" alt="huyền thoại">
+          <div class="player_medal__info">
+            <img src="./assets/images/text-huyen-thoai.svg" alt="huyền thoại">
+            <div class="star_level js-star_level" data-star="4"></div>
+            <span>Độc cô cầu bại</span>
+          </div>
+        </div>
+      </div>
+      <div class="player_service">
+        <div class="player_service__list">
+          <ul>
+            <li class="player_service__item">
+              <a href="javascript:void(0)" class="js-modal" data-tabs="1">
+                <img src="./assets/images/ico-thele.svg" alt="thể lệ">
+                <span>Thể lệ</span>
+              </a>
+            </li>
+            <li class="player_service__item">
+              <a href="">
+                <img src="./assets/images/ico-xephang.svg" alt="Xếp hạng">
+                <span>Xếp hạng</span>
+              </a>
+            </li>
+            <li class="player_service__item">
+              <a href="javascript:void(0)" class="js-modal" data-tabs="2">
+                <img src="./assets/images/ico-giaithuong.svg" alt="Giải thưởng">
+                <span>Giải thưởng</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal thể lệ chương trình -->
+  <div class="modal_container js-modal_arena" data-modal-hint="1">
+    <div class="modal_content">
+      <div class="modal_rules__paging">
+        <div class="modal_head">
+          <button type="button" class="btn_close_modal"></button>
+          <h3>Thể lệ chương trình</h3>
+        </div>
+        <div class="modal_body">
+          <h4>ĐẤU TRƯỜNG MFAST LÀ GÌ?</h4>
+          <p>Là sân chơi mà tại đó, MFast sẽ so sánh hiệu quả hoạt động tất cả người dùng để đánh giá và phân loại phong độ của mỗi người thành cấp bậc tương ứng dựa vào hoa hồng kiếm về mỗi tháng, gồm 6 cấp bậc từ thấp đến cao như sau:</p>
+          <ul class="player_level__list">
+            <li class="player_level__item">
+              <img src="./assets/images/medal-an-si.png" alt="ẩn sĩ">
+              <img src="./assets/images/text-an-si.svg" alt="ẩn sĩ" class="level_text">
+              <span>- Biệt tích giang hồ</span>
+            </li>
+            <li class="player_level__item">
+              <img src="./assets/images/medal-tan-thu.svg" alt="tân thủ">
+              <img src="./assets/images/text-tan-thu.svg" alt="tân thủ" class="level_text">
+              <span>- Ngọa hổ tàng long</span>
+            </li>
+            <li class="player_level__item">
+              <img src="./assets/images/medal-tinh-anh.svg" alt="tinh anh">
+              <img src="./assets/images/text-tinh-anh.svg" alt="tinh anh" class="level_text">
+              <span>- Bá nghiệp xuân thu</span>
+            </li>
+            <li class="player_level__item">
+              <img src="./assets/images/medal-cao-thu.svg" alt="cao thủ">
+              <img src="./assets/images/text-cao-thu.svg" alt="cao thủ" class="level_text">
+              <span>- Đông phương bất bại</span>
+            </li>
+            <li class="player_level__item">
+              <img src="./assets/images/medal-ba-chu.svg" alt="bá chủ">
+              <img src="./assets/images/text-ba-chu.svg" alt="bá chủ" class="level_text">
+              <span>- Thiên hạ vô địch</span>
+            </li>
+            <li class="player_level__item">
+              <img src="./assets/images/medal-huyen-thoai.svg" alt="huyền thoại">
+              <img src="./assets/images/text-huyen-thoai.svg" alt="huyền thoại" class="level_text">
+              <span>- Độc cô cầu bại</span>
+            </li>
+          </ul>
+          <h4>CÁCH ĐÁNH GIÁ VÀ PHÂN LOẠI CẤP BẬC</h4>
+          <p>Cấp bậc sẽ được đánh giá và phân loại vào đầu mỗi tháng. Mỗi cấp bậc chia làm 4 mốc tăng dần từ 1 sao đến 4 sao. Dựa trên phong độ thực tế của người dùng trong tháng để so với những người cùng cấp bậc.</p>
+          <span>Lưu ý:</span>
+          <ul class="cg_note">
+            <li><span class="font500">Cấp bậc</span> được xét mỗi tháng 1 lần vào ngày đầu tiên của tháng và chỉ tăng/giảm tối đa 1 bậc.</li>
+            <li><span class="font500">Mốc sao</span> được đánh giá và xếp hạng hằng ngày với những người cùng cấp bậc, dựa trên hoa hồng phát sinh trong tháng.</li>
+            <li>
+              <span class="font500">Điều kiện tăng bậc:</span>
+              <p class="cg_sub_note">1. Đạt 4 sao tính đến hết ngày cuối của tháng<br>2. Có phát sinh hoa hồng trong tháng</p>
+            </li>
+          </ul>
+          <p>Ví dụ: tính đến cuối tháng, bạn thuộc nhóm <span class="font500">Cao thủ - 4 sao</span> sẽ được thăng hạng lên <span class="font500">Bá Chủ - 1 sao</span>, nếu thuộc nhóm Cao thủ - 1 sao bạn sẽ bị hạ xuống <span class="font500">Tinh anh - 4 sao</span> trong tháng thi đua tiếp theo.</p>
+          <h4>CẤP BẬC DÙNG ĐỂ LÀM GÌ?</h4>
+          <span>Cấp bậc không chỉ dùng để so sánh giữa người dùng với nhau, mà có thể mang lại nhiều lợi ích như:</span>
+          <ul class="cg_note">
+            <li>Tự đánh giá được khả năng của bản thân so với những người khác trên Mfast.</li>
+            <li>Tên của bạn sẽ luôn hiện thị kèm với cấp bậc trên MFast. Do đó, cấp bậc càng cao, uy tín bạn càng lớn thì càng có nhiều cơ hội được hợp tác với người khác để mở rộng mạng lưới CTV bên dưới</li>
+            <li>Các chương trình thi đua sẽ được tổ chức thi đấu theo cấp bậc, nhằm đảm bảo việc thi đua được “Ngang tài ngang sức”. Tất nhiên, giải thưởng phải tương xứng với từng cấp bậc</li>
+            <li>Ngoài ra, bạn sẽ có những <span class="font600">ĐẶC QUYỀN RIÊNG</span> khi đạt cấp bậc là “<span class="font500">Huyền Thoại</span>” hoặc “<span class="font500">Bá Chủ</span>”</li>
+          </ul>
+          <span>Bảng đặc quyền riêng:</span>
+          <table class="tbl_player__level">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="text-start">Bá Chủ</th>
+                <th class="text-end">Huyền Thoại</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="cl_carrot_orange">Số hotline hỗ trợ dành riêng cho nhóm VIP</td>
+                <td><span class="ico-checked"></span></td>
+                <td class="text-end"><span class="ico-checked"></span></td>
+              </tr>
+              <tr>
+                <td class="cl_carrot_orange">Tham gia nhóm hỗ trợ VIP</td>
+                <td><span class="ico-checked"></span></td>
+                <td class="text-end"><span class="ico-checked"></span></td>
+              </tr>
+              <tr>
+                <td class="cl_carrot_orange">Tặng thẻ cào vào ngày sinh nhật có giá trị</td>
+                <td>200,000 đ</td>
+                <td class="text-end">500,000 đ</td>
+              </tr>
+              <tr>
+                <td class="cl_carrot_orange">Nhận áo đồng phục MFast</td>
+                <td>1 áo (*)</td>
+                <td class="text-end">2 áo (*)</td>
+              </tr>
+              <tr>
+                <td class="cl_carrot_orange">Được xét tăng chức / hưởng chính sách hoa hồng riêng, nhận huy chương bằng khen và quà tri ân</td>
+                <td></td>
+                <td class="text-end"><span class="ico-checked"></span></td>
+              </tr>
+              <tr>
+                <td class="cl_carrot_orange">Đài thọ chi phí tham gia Year End Party với đại gia đình DigiPay</td>
+                <td></td>
+                <td class="text-end">100% (***)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="cg_sub_note">(*): đạt cấp bậc "Bá chủ" trong <span class="font500">3 tháng tiếp</span><br>(**): đạt cấp bậc "Huyền thoại" trong <span class="font500">tháng 4</span><br>(***): <span class="font500">trên 8 tháng</span> giữ vững cấp "Huyền thoại"</p>
+          <div class="link_foot_submit">
+            <a href="javascript:void(0)" class="btn_link_submit js-tabs_modals" data-tabs="2">Cơ cấu giải thưởng</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal_prize__paging">
+        <div class="modal_head">
+          <button type="button" class="btn_back_modal js-tabs_modals" data-tabs="1"></button>
+          <h3>Giải thưởng</h3>
+        </div>
+        <div class="modal_body">
+          <div class="medal_process__bar">
+            <div class="icon_medal__bar">
+              <div class="icon_medal__item"><img src="./assets/images/medal-cao-thu.svg" alt=""></div>
+              <div class="icon_medal__item"></div>
+              <div class="icon_medal__item"><img src="./assets/images/ico-reward-box.svg" alt=""></div>
+              <div class="icon_medal__item reward_reactive"><img src="./assets/images/ico-reward-box.svg" alt=""></div>
+              <div class="icon_medal__item reward_reactive"><img src="./assets/images/ico-reward-box.svg" alt=""></div>
+              <div class="icon_medal__item"><img src="./assets/images/medal-huyen-thoai.svg" alt=""></div>
+            </div>
+            <div class="process_bar" data-levels="2"></div>
+            <div class="star_level_md">
+              <div class="star_level__item"></div>
+              <div class="star_level__item reward_reactive"><span>1</span><img src="./assets/images/ico-star.png" alt=""></div>
+              <div class="star_level__item medal_active__here"><span>2</span><img src="./assets/images/ico-star.png" alt=""></div>
+              <div class="star_level__item reward_reactive"><span>3</span><img src="./assets/images/ico-star.png" alt=""></div>
+              <div class="star_level__item reward_reactive"><span>4</span><img src="./assets/images/ico-star.png" alt=""></div>
+              <div class="star_level__item reward_reactive"><span></span><img src="./assets/images/ico-reward-box.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="grp_level__reward">
+            <div class="level_reward__item">
+              <span class="group_level__ttl">Thưởng nhóm Cao thủ</span>
+              <div class="group_level__item">
+                <div class="reward_general">
+                  <span>Tăng sao: <span class="cl_carrot_orange font600">50,000 đ</span></span>
+                  <span>Tăng hạng: <span class="cl_carrot_orange font600">500,000 đ</span></span>
+                </div>
+                <div class="reward_top">
+                  <span>Thưởng TOP 3 nhóm 4 sao:</span>
+                  <dl>
+                    <dt>TOP 1</dt>
+                    <dd class="font600 cl_carrot_orange">2,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 2</dt>
+                    <dd class="font600 cl_carrot_orange">1,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 3</dt>
+                    <dd class="font600 cl_carrot_orange">500,000 đ</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="level_reward__item">
+              <span class="group_level__ttl">Thưởng nhóm Đại cao thủ</span>
+              <button class="btn_expand_group"></button>
+              <div class="group_level__item">
+                <div class="reward_general">
+                  <span>Tăng sao: <span class="cl_carrot_orange font600">100,000 đ</span></span>
+                  <span>Tăng hạng: <span class="cl_carrot_orange font600">500,000 đ</span></span>
+                </div>
+                <div class="reward_top">
+                  <span>Thưởng TOP 3 nhóm 4 sao:</span>
+                  <dl>
+                    <dt>TOP 1</dt>
+                    <dd class="font600 cl_carrot_orange">2,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 2</dt>
+                    <dd class="font600 cl_carrot_orange">1,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 3</dt>
+                    <dd class="font600 cl_carrot_orange">500,000 đ</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="level_reward__item">
+              <span class="group_level__ttl">Thưởng nhóm Huyền thoại</span>
+              <button class="btn_expand_group"></button>
+              <div class="group_level__item">
+                <div class="reward_general">
+                  <span>Tăng sao: <span class="cl_carrot_orange font600">50,000 đ</span></span>
+                  <span>Tăng hạng: <span class="cl_carrot_orange font600">500,000 đ</span></span>
+                </div>
+                <div class="reward_top">
+                  <span>Thưởng TOP 3 nhóm 4 sao:</span>
+                  <dl>
+                    <dt>TOP 1</dt>
+                    <dd class="font600 cl_carrot_orange">2,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 2</dt>
+                    <dd class="font600 cl_carrot_orange">1,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 3</dt>
+                    <dd class="font600 cl_carrot_orange">500,000 đ</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="level_reward__item">
+              <span class="group_level__ttl">Thưởng nhóm Tinh anh</span>
+              <button class="btn_expand_group"></button>
+              <div class="group_level__item">
+                <div class="reward_general">
+                  <span>Tăng sao: <span class="cl_carrot_orange font600">50,000 đ</span></span>
+                  <span>Tăng hạng: <span class="cl_carrot_orange font600">500,000 đ</span></span>
+                </div>
+                <div class="reward_top">
+                  <span>Thưởng TOP 3 nhóm 4 sao:</span>
+                  <dl>
+                    <dt>TOP 1</dt>
+                    <dd class="font600 cl_carrot_orange">2,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 2</dt>
+                    <dd class="font600 cl_carrot_orange">1,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 3</dt>
+                    <dd class="font600 cl_carrot_orange">500,000 đ</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="level_reward__item">
+              <span class="group_level__ttl">Thưởng nhóm Tân thủ</span>
+              <button class="btn_expand_group"></button>
+              <div class="group_level__item">
+                <div class="reward_general">
+                  <span>Tăng sao: <span class="cl_carrot_orange font600">50,000 đ</span></span>
+                  <span>Tăng hạng: <span class="cl_carrot_orange font600">500,000 đ</span></span>
+                </div>
+                <div class="reward_top">
+                  <span>Thưởng TOP 3 nhóm 4 sao:</span>
+                  <dl>
+                    <dt>TOP 1</dt>
+                    <dd class="font600 cl_carrot_orange">2,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 2</dt>
+                    <dd class="font600 cl_carrot_orange">1,000,000 đ</dd>
+                  </dl>
+                  <dl>
+                    <dt>TOP 3</dt>
+                    <dd class="font600 cl_carrot_orange">500,000 đ</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="link_foot_submit">
+            <a href="javascript:void(0)" class="btn_link_submit js-tabs_modals" data-tabs="3">Bảng xếp hạng</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal_rating_paging">3</div>
+    </div>
+  </div>
+  <!-- END Modal thể lệ chương trình -->
+
+  <script>
+    _arena.processStar();
+    _arena.toggleModal();
+    _arena.processBarLevel();
+    _arena.expandGroupLevel();
+  </script>
+</body>
+
+</html>
