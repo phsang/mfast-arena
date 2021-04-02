@@ -31,7 +31,7 @@ var arena = (function () {
     let _process = $('.process_bar');
     let _levelMedal = _process.attr('data-levels');
     let _wid = _process.width() / 5;
-    let _widBack = parseFloat(_wid) * parseInt(_levelMedal);
+    let _widBack = parseFloat(_wid) * parseFloat(_levelMedal);
     _process.css({
       'background': 'linear-gradient(90deg, #243a91 0, #6d8bff ' + _widBack + 'px, transparent ' + _widBack + 'px)'
     });
