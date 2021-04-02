@@ -691,7 +691,7 @@ body {
 
 .top_10_player__list {
   list-style: none;
-  margin-bottom: 0;
+  margin: 11px 0 4px;
   padding-left: 0;
 }
 
@@ -712,11 +712,12 @@ body {
 }
 
 .top_10_player__item {
+  align-items: center;
   border-bottom: 1px solid #3b4992;
   border-width: 0 0 1px 0;
   display: flex;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
   &:last-child {
     margin-bottom: 0;
   }
@@ -735,6 +736,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  letter-spacing: .25px;
 }
 
 .player_info__medal {
@@ -781,9 +783,18 @@ body {
 }
 
 .my_rating {
-  border-top: 1px solid #3b4078;
-  margin-top: -5px;
+  margin: -5px 0 0 -16px;
   padding-top: 15px;
+  position: relative;
+  width: calc(100% + 32px);
+  &:before {
+    border-top: 1px solid #3b4078;
+    content: "";
+    left: 16px;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 32px);
+  }
 }
 
 .my_rating .btn_expand_group {
@@ -798,14 +809,80 @@ body {
 
 .my_rating .top_10_player__item {
   border-bottom: none;
-  margin-bottom: 10px;
-  padding-bottom: 0;
+  margin-bottom: 0;
+  padding: 5px 16px;
 }
 
 .my_rating .group_level__ttl {
   color: #757db2;
+  margin-left: 16px;
 }
 
 .my_rating .group_level__item {
   display: block;
+}
+
+.my_level_here {
+  background: #07311b;
+}
+
+.modal_content.pay_history {
+  background: #00033f;
+  border-radius: 24px 24px 0 0;
+  display: block;
+  width: 100%;
+}
+
+.pay_history>div {
+  background: transparent;
+  border-radius: 0;
+  padding: 16px 0;
+  width: 100%;
+}
+
+.pay_history .modal_body {
+  margin-top: 0;
+  padding: 0 16px;
+}
+
+.pay_history .modal_body p {
+  color: #757db2;
+  margin-bottom: 7px;
+}
+
+.pay_history__list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.pay_history__info {
+  color: #757db2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay_history__info dl {
+  color: #757db2;
+  display: flex;
+  margin: 0;
+}
+
+.pay_history__item {
+  border-bottom: 1px solid #3b4078;
+  margin-bottom: 11px;
+  padding-bottom: 12px;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.pay_history .modal_body .pay_history__item > p {
+  color: #c3cfff;
+  margin-bottom: 5px;
+}
+
+.pay_history__info dd {
+  margin-left: 10px;
 }

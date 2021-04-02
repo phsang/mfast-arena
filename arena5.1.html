@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</head>
+
+<body>
+  <div class="arena_program__container">
+    <div class="arena_head">
+      <div class="player_info__container">
+        <div class="player_info__head">
+          <button type="button" class="btn_arena__back"><img src="./assets/images/btn-arena-back.png" alt="button arena back" width="80"></button>
+          <a href="javascript:void(0)"><img src="./assets/images/ico-volume.svg" alt="icon volume"></a>
+        </div>
+        <div class="player_info__general">
+          <div class="player_avatar">
+            <div class="player_avatar__zone">
+              <img src="./assets/images/ava-user1.png" alt="avatar user 1">
+            </div>
+            <span class="player_username">Cao Phương Đức</span>
+          </div>
+          <div class="player_info">
+            <div class="player_income">
+              <span>Thu nhập trong tháng:</span>
+              <span class="player_val">100,000,000 đ <img src="./assets/images/ico-arrow-right.svg" alt=""></span>
+              <span>Tính đến 00:00 12/03</span>
+            </div>
+            <div class="player_level">
+              <span>Xếp hạng:</span>
+              <span class="player_val">2 <img src="./assets/images/ico-arrow-right.svg" alt=""></span>
+              <span class="player_group safe_group">Nhóm an toàn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arena_content__program">
+      <div class="player_medal">
+        <div class="player_medal__content">
+          <img src="./assets/images/medal-huyen-thoai.svg" alt="huyền thoại">
+          <div class="player_medal__info">
+            <img src="./assets/images/text-huyen-thoai.svg" alt="huyền thoại">
+            <div class="star_level js-star_level" data-star="4"></div>
+            <span>Độc cô cầu bại</span>
+          </div>
+        </div>
+      </div>
+      <div class="player_service">
+        <div class="player_service__list">
+          <ul>
+            <li class="player_service__item">
+              <a href="javascript:void(0)" class="js-modal" data-tabs="1">
+                <img src="./assets/images/ico-thele.svg" alt="thể lệ">
+                <span>Thể lệ</span>
+              </a>
+            </li>
+            <li class="player_service__item">
+              <a href="javascript:void(0)" class="js-modal" data-tabs="3">
+                <img src="./assets/images/ico-xephang.svg" alt="Xếp hạng">
+                <span>Xếp hạng</span>
+              </a>
+            </li>
+            <li class="player_service__item">
+              <a href="javascript:void(0)" class="js-modal" data-tabs="2">
+                <img src="./assets/images/ico-giaithuong.svg" alt="Giải thưởng">
+                <span>Giải thưởng</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Lịch sử thu nhập -->
+  <div class="modal_container js-modal_arena show">
+    <div class="modal_content pay_history">
+      <div class="modal_head">
+        <button type="button" class="btn_close_modal"></button>
+        <h3>Lịch sử thu nhập</h3>
+      </div>
+      <div class="modal_body">
+        <p>Lịch sử thu nhập trong tháng 04 của bạn:</p>
+        <ul class="pay_history__list">
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+          <li class="pay_history__item">
+            <p>Hoa hồng hồ sơ Mcredit Nguyễn Văn An giải ngân thành công</p>
+            <div class="pay_history__info">
+              <dl>
+                <dt>Thu nhập:</dt>
+                <dd class="cl_carrot_orange font500">450,000 đ</dd>
+              </dl>
+              <span>Lúc 12:00 12/04/2021</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END Modal Lịch sử thu nhập -->
+
+  <script>
+    _arena.processStar();
+    _arena.toggleModal();
+    _arena.processBarLevel();
+    _arena.expandGroupLevel();
+  </script>
+</body>
+
+</html>
