@@ -307,34 +307,33 @@ body {
 
 //~~ Modal
 .modal_container {
-  animation: fadeOutDown .4s;
+  animation: fadeOutDown;
+  animation-timing-function: linear;
   background: rgba(0, 0, 0, 0.7);
-  bottom: 0;
-  left: 0;
-  opacity: 0.5;
+  height: 100%;
   position: fixed;
-  right: 0;
-  top: 100%;
+  top: 0;
+  transform: translateY(100%);
+  width: 100%;
 }
 .modal_container.show {
-  animation: fadeInUp .4s;
-  opacity: 1;
-  top: 0;
+  animation: fadeInUp;
+  animation-timing-function: linear;
+  transform: translateY(0);
 }
 @keyframes fadeInUp {
-  0% { opacity: 0.5; top: 100%; };
-  100% { opacity: 1; top: 0; };
+  0% { transform: translateY(100%) };
+  100% { transform: translateY(0) };
 }
 @keyframes fadeOutDown {
-  0% { opacity: 1; top: 0; };
-  100% { opacity: 0.5; top: 100%; };
+  0% { transform: translateY(0) };
+  100% { transform: translateY(100%) };
 }
 
 .modal_content {
   display: flex;
   height: calc(100vh - 10.66667vw);
   margin-top: 10.667vw;
-  transition: .3s;
   width: 300%;
 }
 

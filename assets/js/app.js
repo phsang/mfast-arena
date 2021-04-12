@@ -14,25 +14,24 @@ var arena = (function () {
   arena.prototype.toggleModal = function () {
     let _par = $('.modal_container');
     var _wid = _par.width();
-    $('.btn_close_modal, .js-modal').click(function() {
+    $('.js-modal').click(function() {
+      _par.css('animation-duration', '0.3s');
       let _dataTabs = $(this).attr('data-tabs');
       let _translateX = _wid * (parseInt(_dataTabs) - 1);
-      $.when(
-        $('.modal_content').css({
-          'transform': 'translateX(-' + _translateX + 'px)',
-          'transition': '0'
-        })
-      ).then(function() {
-        $('.modal_content').css({
-          'transition': '.3s'
-        })
-        $('.js-modal_arena').toggleClass('show');
-      });
+      $('.modal_content').css('transform', 'translateX(-' + _translateX + 'px)');
+      $('.js-modal_arena').toggleClass('show');
+    });
+    $('.btn_close_modal').click(function() {
+      $('.modal_content').css('transition', '0s');
+      $('.js-modal_arena').toggleClass('show');
     });
     $('.js-tabs_modals').click(function() {
       let _dataTabs = $(this).attr('data-tabs');
       let _translateX = _wid * (parseInt(_dataTabs) - 1);
-      $('.modal_content').css('transform', 'translateX(-' + _translateX + 'px)');
+      $('.modal_content').css({
+        'transition': '0.3s',
+        'transform': 'translateX(-' + _translateX + 'px)'
+      });
     });
   };
   // process bar level
