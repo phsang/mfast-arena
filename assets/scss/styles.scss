@@ -752,6 +752,7 @@ body {
   display: flex;
   flex: auto;
   flex-direction: column;
+  width: calc(100% - 20vw);
 }
 
 .player_10__general {
@@ -761,9 +762,22 @@ body {
   letter-spacing: 0.067vw;
 }
 
+.player_10__general>span {
+  flex: calc(100% - 22.6667vw) 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .player_info__medal {
   align-items: center;
   display: flex;
+  flex: 20vw 0 0;
+}
+
+.player_info__medal>img {
+  &:first-child { width: 8.8vw; }
+  &:last-child { width: 6.4vw; }
 }
 
 .player_info__medal span {
