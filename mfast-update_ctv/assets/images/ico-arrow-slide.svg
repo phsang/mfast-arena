@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>5DEDA006-87F5-4A17-BAB5-03C740C4E66C</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24"></rect>
+        <path d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M12,1 C5.92486775,1 1,5.92486775 1,12 C1,18.0751322 5.92486775,23 12,23 C18.0751322,23 23,18.0751322 23,12 C23,5.92486775 18.0751322,1 12,1 Z M13.340625,6.591 C13.6496915,6.29429616 14.1378085,6.29429616 14.446875,6.591 L14.446875,6.591 L14.468115,6.61224 C14.7496477,6.9055032 14.7401382,7.37146733 14.446875,7.653 L14.446875,7.653 L9.91875,12 L14.446875,16.347 L14.446875,16.347 L14.468115,16.36824 C14.7496477,16.6615032 14.7401382,17.1274673 14.446875,17.409 C14.1378085,17.7057038 13.6496915,17.7057038 13.340625,17.409 L13.340625,17.409 L7.70625,12 Z" id="path-3"></path>
+    </defs>
+    <g id="MFast-new" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Update-CTV-1" transform="translate(-16.000000, -98.000000)">
+            <g id="Group-18" transform="translate(0.000000, 44.000000)">
+                <g id="Group-30" transform="translate(16.000000, 54.000000)">
+                    <g id="Group" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) ">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Rectangle-Copy-3" fill="#D8D8D8" opacity="0" xlink:href="#path-1"></use>
+                        <g id="Group-15-Copy" mask="url(#mask-2)">
+                            <g transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) " id="coler/-xám">
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <use id="Mask" fill="#424D6C" fill-rule="nonzero" xlink:href="#path-3"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sourcemaps": "^3.0.0"
-  }
-}

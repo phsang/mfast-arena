@@ -199,7 +199,7 @@ body {
 
 .player_service__list ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
   margin-bottom: 0;
   padding: 0 4vw;
@@ -307,27 +307,18 @@ body {
 
 //~~ Modal
 .modal_container {
-  animation: fadeOutDown;
-  animation-timing-function: linear;
   background: rgba(0, 0, 0, 0.7);
   height: 100%;
   position: fixed;
   top: 0;
-  transform: translateY(100%);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: .3s;
   width: 100%;
 }
 .modal_container.show {
-  animation: fadeInUp;
-  animation-timing-function: linear;
-  transform: translateY(0);
-}
-@keyframes fadeInUp {
-  0% { transform: translateY(100%) };
-  100% { transform: translateY(0) };
-}
-@keyframes fadeOutDown {
-  0% { transform: translateY(0) };
-  100% { transform: translateY(100%) };
+  transform: scaleY(1);
+  transition: .3s;
 }
 
 .modal_content {
@@ -464,9 +455,8 @@ body {
   line-height: 1.65;
   list-style: none;
   margin: 1.867vw 0 2.667vw;
-  padding-left: 5.867vw;
+  padding-left: 5.867vw !important;
 }
-
 .cg_note li {
   margin-bottom: 2.667vw;
   position: relative;

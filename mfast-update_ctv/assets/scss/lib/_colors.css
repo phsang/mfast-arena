@@ -1,0 +1,35 @@
+.kelly_green {
+  color: #39b818;
+}
+
+.fire_engine_red {
+  color: #BC0F23;
+}
+
+.endeavour {
+  color: #233A95;
+}
+
+.mt2 {
+  margin-top: 2px !important;
+}
+
+.mt-7 {
+  margin-top: -7px !important;
+}
+
+.mb-4 {
+  margin-bottom: -4px !important;
+}
+
+.mb-7 {
+  margin-bottom: -7px !important;
+}
+
+.mb15 {
+  margin-bottom: 15px !important;
+}
+
+.pt27 {
+  padding-top: 27px !important;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>0AE0FFD3-3E92-4933-812D-7D9F85837098</title>
+    <defs>
+        <path d="M0.814125269,0.315767598 C1.27025041,-0.140357544 2.00977539,-0.140357544 2.46590053,0.315767598 L2.46590053,0.315767598 L11.2239604,9.07382747 C11.5332111,9.38307821 11.6327913,9.82260155 11.5227009,10.2157491 C11.4968187,10.4747601 11.3846659,10.7273814 11.1858747,10.9261725 L2.42781486,19.6842324 C1.97168972,20.1403575 1.23216475,20.1403575 0.776039603,19.6842324 C0.31991446,19.2281073 0.31991446,18.4885823 0.776039603,18.0324571 L8.828,9.981 L0.814125269,1.96754286 C0.390580494,1.54399808 0.360327296,0.876093249 0.723365675,0.417639893 Z" id="path-1"></path>
+    </defs>
+    <g id="MFast-new" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Update-CTV-2" transform="translate(-24.000000, -55.000000)">
+            <g id="Group-4" transform="translate(0.000000, 44.000000)">
+                <g id="icon/-user/-0-copy" transform="translate(30.000000, 22.000000) scale(-1, 1) translate(-30.000000, -22.000000) translate(24.000000, 12.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#424D6C" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
