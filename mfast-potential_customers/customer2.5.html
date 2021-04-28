@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="potential_customers_container">
+      <div class="pot_customers__head">
+        <div class="pot_customers__head_filter">
+          <button type="button" class="pot_customers__back"></button>
+          <span class="pot_customers__ttl">Tệp khách hàng</span>
+          <div class="pot_customers__filter">
+            <button type="button" class="js-toggle_modal btn-customer_filter kelly_green" data-target="md_filter">Lọc&nbsp;<img src="./assets/images/ico-filter.svg" alt=""></button>
+            <div class="customer_filter_modal js-modal" data-modal="md_filter">
+              <div class="md_over"></div>
+              <div class="modal_content">
+                <div class="filter_modal_head">
+                  <button class="js-close_modal btn-close_modal"></button>
+                  <span class="modal_ttl">Bộ lọc</span>
+                </div>
+                <div class="filter_modal_body">
+                  <form action="" class="frm-customer_filter">
+                    <div class="frm_group">
+                      <label for="province">Lọc theo Tỉnh / Thành phố</label>
+                      <div class="select_text_center">
+                        <select name="province" id="province">
+                          <option value="">- Tỉnh / Thành Phố -</option>
+                          <option value="0">- Hồ Chí Minh (6) -</option>
+                          <option value="1">- Đà Nẵng (4) -</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="frm_group">
+                      <label for="district">Lọc theo Quận / Huyện</label>
+                      <div class="select_text_center">
+                        <select name="district" id="district">
+                          <option value="">- Tất cả Quận / Huyện (6) -</option>
+                          <option value="0">- Quận 1 (4) -</option>
+                          <option value="1">- Thủ Đức (2) -</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="frm_group filter_extension">
+                      <label>Ngày cập nhật dữ liệu</label>
+                      <div class="group_checked_radio">
+                        <label for="all">
+                          <input type="radio" id="all" name="date">
+                          <span>Tất cả</span>
+                        </label>
+                        <label for="day">
+                          <input type="radio" id="day" name="date" checked>
+                          <span>Hôm nay</span>
+                        </label>
+                        <label for="yesterday">
+                          <input type="radio" id="yesterday" name="date">
+                          <span>Hôm qua</span>
+                        </label>
+                        <label for="lastday">
+                          <input type="radio" id="lastday" name="date">
+                          <span>Trước đó</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="frm_group filter_extension">
+                      <label>Sắp xếp theo</label>
+                      <div class="group_checked_radio">
+                        <label for="new">
+                          <input type="radio" id="new" name="sort" checked>
+                          <span>Mới nhất lên đầu</span>
+                        </label>
+                        <label for="old">
+                          <input type="radio" id="old" name="sort">
+                          <span>Cũ nhất lên đầu</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="frm_group frm_submit">
+                      <input type="submit" value="Áp dụng" class="btn-submit">
+                      <input type="button" value="Hủy lọc" class="kelly_green btn-exit_filter">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pot_customers__head_filval">
+          <span>Lọc theo:</span>
+          <ul class="filter_val__list">
+            <li class="filter_val__item">
+              <img src="./assets/images/ico-place.svg" alt="">
+              <span class="fil_province">Hồ Chí Minh / Q7</span>
+            </li>
+            <li class="filter_val__item">
+              <img src="./assets/images/ico-clock.svg" alt="">
+              <span class="fil_province">Hôm nay</span>
+            </li>
+            <li class="filter_val__item">
+              <img src="./assets/images/ico-sort.svg" alt="">
+              <span class="fil_province">Mới nhất</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pot_customers__body">
+        <div class="pot_customers__tabs">
+          <div class="pot_customers__tabs_head">
+            <button type="button" class="js-tab_menu_item tab_menu_item active" data-target="1">KH cũ (50)</button>
+            <button type="button" class="js-tab_menu_item tab_menu_item" data-target="2">KH mới (3)</button>
+            <button type="button" class="js-tab_menu_item tab_menu_item" data-target="3">Đang xử lý (2)</button>
+          </div>
+          <div class="pot_customers__tabs_body">
+            <div class="js-tab_content tab_content active" data-tab="1">
+              <div class="potential_filter">
+                <form action="" class="frm-potential_filter">
+                  <div class="frm_group float_icon_left">
+                    <img src="./assets/images/ico-filter-2.svg" alt="">
+                    <select name="potential" id="potential" class="frm_control">
+                      <option value="0">- Tiềm năng khai thác thêm -</option>
+                      <option value="1">- Tất cả tiềm năng khai thác -</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="brand_filter">
+                <span>Dự án:</span>
+                <ul class="brand_filter__list">
+                  <li class="brand_filter__item active">
+                    <span>Tất cả (50)</span>
+                  </li>
+                  <li class="brand_filter__item">
+                    <span>Cash24 (6)</span>
+                  </li>
+                  <li class="brand_filter__item">
+                    <span>MCredit (4)</span>
+                  </li>
+                  <li class="brand_filter__item">
+                    <span>EasyCredit (40)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="potential_search">
+                <form action="" class="frm-potential_search">
+                  <div class="frm_group float_icon_left">
+                    <img src="./assets/images/ico-search.png" alt="">
+                    <input type="text" class="frm_control" placeholder="Tìm theo tên, Sđt khách hàng">
+                  </div>
+                </form>
+              </div>
+              <div class="note_list_customer">
+                <span>DS KH và dự án đã từng tham gia</span>
+                <div class="majors_note">
+                  <button type="button" class="js-toggle_modal btn-modal_majors_note" data-target="md_note">Chú thích</button>
+                  <div class="js-modal modal-modal_majors_note" data-modal="md_note">
+                    <div class="md_over"></div>
+                    <div class="md_content">
+                      <div class="md_body">
+                        <div class="majors_note_list">
+                          <div class="majors_note_item">
+                            <div class="potential_brand_item active_waiting"><img src="./assets/images/ico-mcredit.png" alt=""></div>
+                            <p>Dự án có biểu tượng <img src="./assets/images/ico-waiting.svg" alt=""> ý nghĩa <span class="tenne_tawny">vẫn đang trong quá trình xử lý</span>.</p>
+                          </div>
+                          <div class="majors_note_item">
+                            <div class="potential_brand_item active_error"><img src="./assets/images/ico-easycredit.png" alt=""></div>
+                            <p>Dự án có biểu tượng <img src="./assets/images/ico-error.svg" alt=""> ý nghĩa <span class="fire_engine_red">dự án đã thất bại</span>.</p>
+                          </div>
+                          <div class="majors_note_item">
+                            <div class="potential_brand_item"><img src="./assets/images/ico-cimb.png" alt="">&nbsp;/&nbsp;<img src="./assets/images/ico-bsh.png" alt="">&nbsp;- Tai nạn giao thông</div>
+                            <p>Dự án không có biểu tượng là các dự án <span class="watercourse">đã thành công</span>.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="potential_customer__list">
+                <div class="potential_customer__item js-toggle_modal" data-target="md-potential_customers">
+                  <button type="button" class="btn-potential_customer_expand"></button>
+                  <div class="potential_customer__info">
+                    <span class="potential_customer__name">Nguyễn Văn Đạt</span>
+                    <div class="potential_brand_list">
+                      <div class="potential_brand_item active_waiting"><img src="https://appay-rc.cloudcms.vn/mfast_assets/img/project_logo/aizen/logo-partner-aizen-large@3x.png" alt=""></div>
+                      <div class="potential_brand_item"><img src="./assets/images/ico-cimb.png" alt=""></div>
+                      <div class="potential_brand_item active_error"><img src="https://mcredit.com.vn/Uploads/logo.png" alt=""></div>
+                    </div>
+                    <div class="insurance_list">
+                      <p><img src="./assets/images/ico-bsh.png" alt=""> - Tai nạn giao thông</p>
+                      <p><img src="./assets/images/ico-pti.png" alt=""> - Bảo an tín dụng</p>
+                    </div>
+                    <div class="call_customer">
+                      <a href="javascript:void(0)">Gọi <img src="./assets/images/ico-call.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="potential_customer__item js-toggle_modal" data-target="md-potential_customers">
+                  <button type="button" class="btn-potential_customer_expand"></button>
+                  <div class="potential_customer__info">
+                    <span class="potential_customer__name">Trần Đức Minh</span>
+                    <div class="insurance_list">
+                      <p><img src="./assets/images/ico-bsh.png" alt=""> - Tai nạn giao thông</p>
+                      <p><img src="./assets/images/ico-pti.png" alt=""> - Bảo an tín dụng</p>
+                    </div>
+                    <div class="call_customer">
+                      <a href="javascript:void(0)">Gọi <img src="./assets/images/ico-call.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="potential_customer__item js-toggle_modal" data-target="md-potential_customers">
+                  <button type="button" class="btn-potential_customer_expand"></button>
+                  <div class="potential_customer__info">
+                    <span class="potential_customer__name">Nguyễn Văn Đạt</span>
+                    <div class="potential_brand_list">
+                      <div class="potential_brand_item active_waiting"><img src="./assets/images/ico-mcredit.png" alt=""></div>
+                      <div class="potential_brand_item"><img src="./assets/images/ico-cimb.png" alt=""></div>
+                      <div class="potential_brand_item active_error"><img src="./assets/images/ico-easycredit.png" alt=""></div>
+                    </div>
+                    <div class="insurance_list">
+                      <p><img src="./assets/images/ico-bsh.png" alt=""> - Tai nạn giao thông</p>
+                      <p><img src="./assets/images/ico-pti.png" alt=""> - Bảo an tín dụng</p>
+                    </div>
+                    <div class="call_customer">
+                      <a href="javascript:void(0)">Gọi <img src="./assets/images/ico-call.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="potential_customer__item js-toggle_modal" data-target="md-potential_customers">
+                  <button type="button" class="btn-potential_customer_expand"></button>
+                  <div class="potential_customer__info">
+                    <span class="potential_customer__name">Nguyễn Phạm Thục Trinh</span>
+                    <div class="insurance_list">
+                      <p><img src="./assets/images/ico-cash24.png" alt=""></p>
+                      <p><img src="./assets/images/ico-mic.png" alt=""> - Sức khỏe cá nhân</p>
+                    </div>
+                    <div class="call_customer">
+                      <a href="javascript:void(0)">Gọi <img src="./assets/images/ico-call.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="potential_customer__item js-toggle_modal" data-target="md-potential_customers">
+                  <button type="button" class="btn-potential_customer_expand"></button>
+                  <div class="potential_customer__info">
+                    <span class="potential_customer__name">Trịnh Nguyễn Hoàng Giang</span>
+                    <div class="insurance_list">
+                      <p><img src="./assets/images/ico-miraeassets.png" alt=""></p>
+                      <p><img src="./assets/images/ico-bsh.png" alt=""> - TNDS ô tô</p>
+                    </div>
+                    <div class="call_customer">
+                      <a href="javascript:void(0)">Gọi <img src="./assets/images/ico-call.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="js-tab_content tab_content" data-tab="2">
+              <div class="brand_filter">
+                <span>Dự án:</span>
+                <ul class="brand_filter__list">
+                  <li class="brand_filter__item active"><span>Tất cả (3)</span></li>
+                  <li class="brand_filter__item"><span>Tài chính (2)</span></li>
+                  <li class="brand_filter__item"><span>Bảo hiểm (1)</span></li>
+                </ul>
+              </div>
+              <div class="potential_customer__list empty_customer_list">
+                <img src="./assets/images/img-empty-customer-list.svg" alt="">
+                <p>Hiện chưa có khách hàng mới nào</p>
+              </div>
+            </div>
+            <div class="js-tab_content tab_content" data-tab="3">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connect_to_customer">
+    <a href="#" class="connect_to_customer_link">
+      <span class="circle_connect_book"></span>
+      <img src="./assets/images/btn-connect-to-customer.png" alt="">
+    </a>
+  </div>
+
+  <!-- Modal potential cutomer -->
+  <div class="js-modal modal-potential_customers" data-modal="md-potential_customers">
+    <div class="md_over"></div>
+    <div class="md-pot_content">
+      <div class="md-pot_head">
+        <div class="pot_cutomer_info">
+          <span class="font600">Cao Phương Đức</span>
+          <div class="customer_card_phone">
+            <span class="font13 d-flex align-center"><img src="./assets/images/ico-card.svg" alt="">040097000120</span>
+            <span class="font12 font600 kelly_green d-flex align-center"><img src="./assets/images/ico-phone.svg" alt="">096 989 7124</span>
+          </div>
+          <span class="font12 d-flex align-center customer_location"><img src="./assets/images/ico-place.svg" alt="">146 Cộng Hòa, Phường 12, Q. Tân Bình, HCM</span>
+        </div>
+        <div class="pot_brand_info">
+          <div class="potential_customer__info">
+            <span class="font13">Các dự án <span class="font13 font600">đã tham gia</span></span>
+            <div class="potential_brand_list">
+              <div class="potential_brand_item active_waiting"><img src="./assets/images/ico-mcredit.png" alt=""></div>
+              <div class="potential_brand_item"><img src="./assets/images/ico-cimb.png" alt=""></div>
+              <div class="potential_brand_item active_error"><img src="./assets/images/ico-easycredit.png" alt=""></div>
+            </div>
+            <div class="insurance_list">
+              <p><img src="./assets/images/ico-bsh.png" alt=""> - Tai nạn giao thông</p>
+              <p><img src="./assets/images/ico-pti.png" alt=""> - Bảo an tín dụng</p>
+            </div>
+            <div class="pot_brand__note">
+              <a href="javascript:void(0)">Chú thích <img src="./assets/images/ico-info-screen.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md-pot_body">
+        <div class="potential_filter">
+          <form action="" class="frm-potential_filter">
+            <div class="frm_group float_icon_left">
+              <img src="./assets/images/ico-filter-2.svg" alt="">
+              <select name="potential" id="potential" class="frm_control">
+                <option value="0">- Tiềm năng khai thác thêm -</option>
+                <option value="1">- Tất cả tiềm năng khai thác -</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="potential_active__list">
+          <div class="potential_active__item">
+            <div class="pot_activce_head">
+              <p>KH vay có tiềm năng <span class="font600">khai thác thêm</span></p>
+              <a href="javascript:void(0)" class="kelly_green active_profile_customer">Lên hồ sơ</a>
+            </div>
+            <span class="pot_activce_description">(từng vay thành công và có lịch sử trả nợ tốt, tiềm năng khai thác vay thêm)</span>
+            <div class="potential_brand_list">
+              <div class="potential_brand_item"><img src="./assets/images/ico-mcredit.png" alt=""></div>
+              <div class="potential_brand_item"><img src="./assets/images/ico-miraeassets.png" alt=""></div>
+              <div class="potential_brand_item"><img src="./assets/images/ico-cash24.png" alt=""></div>
+            </div>
+          </div>
+          <div class="potential_active__item">
+            <div class="pot_activce_head">
+              <p>KH vay có tiềm năng <span class="font600">khai thác lại</span></p>
+              <a href="javascript:void(0)" class="kelly_green active_profile_customer">Lên hồ sơ</a>
+            </div>
+            <span class="pot_activce_description">(từng vay thất bại, nhưng thỏa điều kiện lên lại hồ sơ)</span>
+            <div class="potential_brand_list">
+              <div class="potential_brand_item"><img src="./assets/images/ico-cimb.png" alt=""></div>
+            </div>
+          </div>
+          <div class="potential_active__item">
+            <div class="pot_activce_head">
+              <p>KH bảo hiểm có tiềm năng <span class="font600">tái tục</span></p>
+            </div>
+            <span class="pot_activce_description">(Có bảo hiểm sắp hết hạn, tiềm năng tham gia tái tục)</span>
+            <div class="reactive_brand_list">
+              <div class="reactive_brand_item">
+                <img src="./assets/images/ico-moto.svg" alt="">
+                <div class="reactive_brand_body">
+                  <div class="brand_name_info">
+                    <img src="./assets/images/ico-bsh.png" alt="">
+                    <span>- TNDS xe máy</span>
+                  </div>
+                  <a href="javascript:void(0)" class="kelly_green active_profile_customer">Tái tục</a>
+                </div>
+              </div>
+              <div class="reactive_brand_item">
+                <img src="./assets/images/ico-peple.svg" alt="">
+                <div class="reactive_brand_body">
+                  <div class="brand_name_info">
+                    <img src="./assets/images/ico-pvi.png" alt="">
+                    <span>- Tai nạn cá nhân</span>
+                  </div>
+                  <a href="javascript:void(0)" class="kelly_green active_profile_customer">Tái tục</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="potential_active__item">
+            <div class="pot_activce_head">
+              <p>KH bảo hiểm có tiềm năng <span class="font600">khai thác thêm</span></p>
+            </div>
+            <span class="pot_activce_description">(Đã từng mua các sản phẩm bảo hiểm, có thêm khai thác các sản phẩm liên quan)</span>
+            <div class="reactive_brand_list">
+              <div class="reactive_brand_item">
+                <img src="./assets/images/ico-heart.svg" alt="">
+                <div class="reactive_brand_body">
+                  <div class="brand_name_info">
+                    <img src="./assets/images/ico-mic.png" alt="">
+                    <span>- Sức khỏe cá nhân</span>
+                  </div>
+                  <a href="javascript:void(0)" class="kelly_green active_profile_customer">Lên hồ sơ</a>
+                </div>
+              </div>
+              <div class="reactive_brand_item">
+                <img src="./assets/images/ico-peple.svg" alt="">
+                <div class="reactive_brand_body">
+                  <div class="brand_name_info">
+                    <span class="font500">Bảo hiểm tai nạn cá nhân</span>
+                  </div>
+                  <a href="javascript:void(0)" class="kelly_green active_profile_customer">Tái tục</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Modal potential cutomer -->
+
+  <!-- Modal new cutomer -->
+  <div class="js-modal modal-new_customers" data-modal="md-new_customers">
+    <div class="md_over"></div>
+    <div class="md-pot_content">
+      <div class="md-pot_head">
+        <div class="pot_cutomer_info">
+          <span class="font600">Cao Phương Đức</span>
+          <div class="customer_card_phone">
+            <span class="font13 d-flex align-center"><img src="./assets/images/ico-card.svg" alt="">040097000120</span>
+            <span class="font12 font600 kelly_green d-flex align-center"><img src="./assets/images/ico-phone.svg" alt="">096 989 7124</span>
+          </div>
+          <span class="font12 d-flex align-center customer_location"><img src="./assets/images/ico-place.svg" alt="">146 Cộng Hòa, Phường 12, Q. Tân Bình, HCM</span>
+          <span class="new_customer_online">2h trước</span>
+        </div>
+      </div>
+      <div class="md-pot_body">
+        <div class="group_profile_customer">
+          <h2>NHU CẦU TÀI CHÍNH</h2>
+          <div class="profile_customer_content">
+            <p class="profile_description">Nhân viên đi làm hưởng lương muốn vay 25,000,000 vnđ - thời hạn 24 tháng</p>
+            <div class="attch_document">
+              <h3>THÔNG TIN NÂNG CAO</h3>
+              <p>Hình chụp <span class="font600">2 mặt</span> CMND/CCCD</p>
+              <div class="attach_cmnd">
+                <div class="attach_cmnd__item"><img src="./assets/images/moc-cmnd.png" alt=""></div>
+                <div class="attach_cmnd__item"><img src="./assets/images/moc-cmnd.png" alt=""></div>
+              </div>
+              <p class="font13">Hình <span class="font600 font13">chân dung cầm CMND</span></p>
+              <div class="attach_chandung"><img src="./assets/images/moc-cmnd.png" alt=""></div>
+              <p>Hình chụp chứng từ khác</p>
+              <div class="attach_document_other">
+                <div class="attach_document_other__item"><img src="./assets/images/moc-cmnd.png" alt=""></div>
+                <div class="attach_document_other__item"><img src="./assets/images/moc-cmnd.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="customer_action_link">
+            <a href="#"><img src="./assets/images/ico-money.svg" alt=""> Lên hồ sơ vay</a>
+          </div>
+          <h2 class="mt25">NHU CẦU BẢO HIỂM</h2>
+          <div class="insurance_reactive__list">
+            <div class="insurance_reactive__item">
+              <div class="insurance_reactive__info">
+                <div class="insurance_reactive__image">
+                  <img src="./assets/images/ico-moto.svg" alt="">
+                </div>
+                <div class="insurance_reactive__content">
+                  <p class="insurance_reactive__ttl">TNDS xe máy</p>
+                  <p>Hoa hồng: <span class="font14 font600 watercourse">XX%</span></p>
+                </div>
+              </div>
+              <a href="javascript:void(0)" class="kelly_green active_profile_customer">Bán BH</a>
+            </div>
+            <div class="insurance_reactive__item">
+              <div class="insurance_reactive__info">
+                <div class="insurance_reactive__image">
+                  <img src="./assets/images/ico-moto-2.svg" alt="">
+                </div>
+                <div class="insurance_reactive__content">
+                  <p class="insurance_reactive__ttl">Toàn diện xe máy</p>
+                  <p>Hoa hồng: <span class="font14 font600 watercourse">XX%</span></p>
+                </div>
+              </div>
+              <a href="javascript:void(0)" class="kelly_green active_profile_customer">Bán BH</a>
+            </div>
+          </div>
+          <h2 class="mt25">KHAI THÁC THÊM</h2>
+          <div class="customer_action_link">
+            <a href="#"><img src="./assets/images/ico-money.svg" alt=""> Lên hồ sơ vay</a>
+          </div>
+          <div class="customer_action_link">
+            <a href="#"><img src="./assets/images/ico-heart-green.svg" alt=""> Bán bảo hiểm khác</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Modal new cutomer -->
+
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="18px" viewBox="0 0 10 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>4B2640C2-2FF8-4735-849F-1E89DDC15FF2</title>
+    <defs>
+        <path d="M0.678437724,0.929806332 C1.05854201,0.549702046 1.67481282,0.549702046 2.05491711,0.929806332 L2.05491711,0.929806332 L9.35330033,8.22818956 C9.61253354,8.48742277 9.69496828,8.85650447 9.60060454,9.18560011 C9.57897052,9.39947174 9.48570988,9.60766284 9.32156228,9.77181044 L2.02317905,17.0701937 C1.64307477,17.450298 1.02680395,17.450298 0.646699669,17.0701937 C0.266595383,16.6900894 0.266595383,16.0738186 0.646699669,15.6937143 L7.35562145,8.98372812 L0.678437724,2.30628571 C0.32757223,1.95542022 0.300582576,1.40332408 0.597468764,1.02150002 Z" id="path-1"></path>
+    </defs>
+    <g id="Tiếp-cận-KH" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-KH-Tiềm-năng-7.1" transform="translate(-355.000000, -351.000000)">
+            <g id="Group-11" transform="translate(0.000000, 184.000000)">
+                <g id="Group-5" transform="translate(0.000000, 34.000000)">
+                    <g id="Components/-Customer/-Potential/-full-Copy" transform="translate(0.000000, 99.000000)">
+                        <g id="icon/-next/1" transform="translate(355.000000, 34.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#233A95" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

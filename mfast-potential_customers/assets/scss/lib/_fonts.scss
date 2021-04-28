@@ -1,0 +1,40 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../fonts/HelveticaNeue.otf") format("opentype");
+}
+@font-face {
+  font-family: HelveticaNeue;
+  font-weight: 400;
+  src: url("../fonts/HelveticaNeue-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: HelveticaNeue;
+  font-weight: 500;
+  src: url("../fonts/helvetica-neue-medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: HelveticaNeue;
+  font-weight: 600;
+  src: url("../fonts/HelveticaNeue-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: HelveticaNeue;
+  font-weight: 700;
+  src: url("../fonts/HelveticaNeue-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: italic;
+  src: url("../fonts/HelveticaNeue-LightItalic.otf") format("opentype");
+}
+
+.font10 { font-size: #{px2vw(10)} !important; }
+.font12 { font-size: #{px2vw(12)} !important; }
+.font13 { font-size: #{px2vw(13)} !important; }
+.font14 { font-size: #{px2vw(14)} !important; }
+.font16 { font-size: #{px2vw(16)} !important; }
+
+.font400 { font-weight: 400 !important; }
+.font500 { font-weight: 500 !important; }
+.font600 { font-weight: 600 !important; }
+.font700 { font-weight: 700 !important; }
