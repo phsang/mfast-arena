@@ -39,15 +39,15 @@
             </div>
           </div>
         </div>
-        <div class="link_cutomer_active_list">
-          <div class="link_cutomer_active_item">
-            <div class="customer_link_wraper">
+        <div class="link_customer_active_list">
+          <div class="link_customer_active_item">
+            <div class="customer_link_wrapper">
               <a href="mfast.vn/thuthap/11313123" class="active_real_link">mfast.vn/thuthap/11313123</a>
               <span class="action_on_customer">Liên kết online</span>
               <p>Đăng ký nhu cầu cần tư vấn các sản phẩm tài chính và bảo hiểm</p>
             </div>
-            <div class="customer_colect_count">
-              <div class="colect_count">
+            <div class="customer_collect_count">
+              <div class="collect_count">
                 <div class="counter_user">
                   <span>Đã vào xem</span>
                   <p><span class="font600">1000</span> người</p>
@@ -57,7 +57,7 @@
                   <p class="endeavour"><span class="font600">100</span> người</p>
                 </div>
               </div>
-              <div class="colect_count">
+              <div class="collect_count">
                 <div class="counter_user">
                   <span>Thu thập thông tin</span>
                   <p class="font500">Tài chính + bảo hiểm</p>
@@ -79,14 +79,14 @@
               <a href="javascript:void(0)" class="btn-copy_to_clipboard"><img src="./assets/images/ico-file-white.svg" alt=""> Copy link</a>
             </div>
           </div>
-          <div class="link_cutomer_active_item dead_link">
-            <div class="customer_link_wraper">
+          <div class="link_customer_active_item dead_link">
+            <div class="customer_link_wrapper">
               <a href="mfast.vn/thuthap/11313123" class="active_real_link">mfast.vn/thuthap/11313123</a>
               <span class="action_on_customer">Gửi trực tiếp từng người</span>
               <p>Đăng ký nhu cầu cần tư vấn các sản phẩm tài chính</p>
             </div>
-            <div class="customer_colect_count">
-              <div class="colect_count">
+            <div class="customer_collect_count">
+              <div class="collect_count">
                 <div class="counter_user">
                   <span>Đã vào xem</span>
                   <p><span class="font600">1000</span> người</p>
@@ -96,7 +96,7 @@
                   <p class="endeavour"><span class="font600">100</span> người</p>
                 </div>
               </div>
-              <div class="colect_count">
+              <div class="collect_count">
                 <div class="counter_user">
                   <span>Thu thập thông tin</span>
                   <p class="font500">Tài chính + bảo hiểm</p>
@@ -122,11 +122,11 @@
         <div class="note_list_customer">
           <span>CÁC HƯỚNG DẪN HỮU ÍCH:</span>
         </div>
-        <div class="link_benifit">
-          <div class="link_benifit__list">
-            <a href="" class="link_benifit__item">Cách tạo quảng cáo Martketplace trên Facebook</a>
-            <a href="" class="link_benifit__item">Hướng dẫn nhúng liên kết nhanh trên Facebook</a>
-            <a href="" class="link_benifit__item">Cách tạo quảng cáo trên Google</a>
+        <div class="link_benefit">
+          <div class="link_benefit__list">
+            <a href="" class="link_benefit__item">Cách tạo quảng cáo Martketplace trên Facebook</a>
+            <a href="" class="link_benefit__item">Hướng dẫn nhúng liên kết nhanh trên Facebook</a>
+            <a href="" class="link_benefit__item">Cách tạo quảng cáo trên Google</a>
           </div>
         </div>
       </div>
@@ -137,58 +137,239 @@
       <div class="md_over"></div>
       <div class="md-content">
         <div class="md-head">
-          <button class="md-close_button"></button>
+          <button class="md-close_button js-close_modal"></button>
           <span class="md-title">Tạo liên kết</span>
         </div>
         <div class="md-pot_body">
-          <div class="">
-            <span class="">Nhãn khách hàng</span>
-            <p>Giúp bạn nhận biết nguồn gốc khách hàng tại trang Tệp khách hàng</p>
-            <div class="">
-              <span>Liên kết online</span>
-              <span class="">15 / 24</span>
+          <div class="create_connection_on_step">
+            <div class="create_connection_container">
+              <span class="">Nhãn khách hàng:</span>
+              <p>Giúp bạn nhận biết nguồn gốc khách hàng tại trang Tệp khách hàng</p>
+              <div class="connection_online">
+                <input type="text" class="js-vali_input" placeholder="Liên kết online">
+                <span class="connection_online_count">0 / 24</span>
+              </div>
+              <span class="">Định hướng khách hàng</span>
+              <p>Chọn nhu cầu khách hàng cần thu thập thông tin</p>
+              <div class="form-create_connection">
+                <form action="" class="frm_create_conn">
+                  <div class="grp_checked_parent">
+                    <div class="custom_checkbox custom_checkbox_rectangle">
+                      <label for="">
+                        <input type="checkbox" class="js-check_par" data-target="radio_counselors" checked>
+                        <span>Khách hàng có nhu cầu vay</span>
+                        <span class="check_remart"></span>
+                      </label>
+                    </div>
+                    <div class="custom_checkbox custom_radio_circle check_val_child">
+                      <label for="">
+                        <input type="radio" name="radio_1" class="js-check" data-check="check_option_1" data-radio="radio_counselors" checked>
+                        <span>Chuyển về cho tôi tự tư vấn</span>
+                        <span class="check_remart"></span>
+                      </label>
+                    </div>
+                    <div class="custom_checkbox custom_radio_circle check_val_child">
+                      <label for="">
+                        <input type="radio" name="radio_1" class="js-check js-toggle_modal" data-check="check_option_2" data-radio="radio_counselors" data-target="md-counselors">
+                        <span>Gửi cho MFast tự chỉ định người tư vấn</span>
+                        <span class="check_remart"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grp_checked_parent">
+                    <div class="custom_checkbox custom_checkbox_rectangle">
+                      <label for="">
+                        <input type="checkbox" checked>
+                        <span>Khách hàng có nhu cầu mua bảo hiểm</span>
+                        <span class="check_remart"></span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <a href="#" class="btn-review_connection">Xem thử liên kết</a>
+              <button class="btn-create_connection js-create_connection">Tạo liên kết</button>
             </div>
-            <span class="">Định hướng khách hàng</span>
-            <p>Chọn nhu cầu khách hàng cần thu thập thông tin</p>
-            <div class="">
-              <div class="grp_checked_parent">
-                <div class="custom_checkbox custom_checkbox_rectangle">
-                  <label for="">Khách hàng có nhu cầu vay
-                    <input type="checkbox">
-                    <span class="check_remart"></span>
-                  </label>
-                </div>
-                <div class="custom_checkbox custom_checkbox_circle">
-                  <label for="">Chuyển về cho tôi tự tư vấn
-                    <input type="checkbox">
-                    <span class="check_remart"></span>
-                  </label>
-                </div>
-                <div class="custom_checkbox custom_checkbox_circle">
-                  <label for="">Gửi cho MFast tự chỉ định người tư vấn
-                    <input type="checkbox">
-                    <span class="check_remart"></span>
-                  </label>
+            <div class="create_connection_container create_connection_success">
+              <div class="message_create_connection">
+                <img src="./assets/images/ico-success.svg" alt="">
+                <p class="font500 font16 green">Tạo liên kết khách hàng thành công</p>
+                <p>Giờ đây bạn có thể gửi link này cho khách hàng hoặc nhúng vào các chiến dịch quảng cáo để tiếp cận được nhiều khách hàng hơn.</p>
+              </div>
+              <button class="btn-create_connection js-toggle_modal" data-target="md-detail_connection">Chi tiết liên kết</button>
+              <a href="#" class="btn-review_connection">Về trang liên kết khách hàng</a>
+              <div class="note_list_customer">
+                <span>CÁC HƯỚNG DẪN HỮU ÍCH:</span>
+              </div>
+              <div class="link_benefit">
+                <div class="link_benefit__list">
+                  <a href="" class="link_benefit__item">Cách tạo quảng cáo Martketplace trên Facebook</a>
+                  <a href="" class="link_benefit__item">Hướng dẫn nhúng liên kết nhanh trên Facebook</a>
+                  <a href="" class="link_benefit__item">Cách tạo quảng cáo trên Google</a>
                 </div>
               </div>
-              <div class="grp_checked_parent">
-                <div class="custom_checkbox custom_checkbox_rectangle">
-                  <label for="">Khách hàng có nhu cầu mua bảo hiểm
-                    <input type="checkbox">
-                    <span class="check_remart"></span>
-                  </label>
-                </div>
-              </div>
             </div>
-            <a href="#">Xem thử liên kết</a>
-            <button>Tạo liên kết</button>
           </div>
         </div>
       </div>
     </div>
     <!-- END Modal potential cutomer -->
 
-    <script src="./assets/js/app.js"></script>
+    <!-- Modal chi tiết liên kết -->
+    <div class="js-modal modal-potential_customers" data-modal="md-detail_connection">
+      <div class="md_over"></div>
+      <div class="md-content">
+        <div class="md-head">
+          <button class="md-close_button js-close_modal"></button>
+          <span class="md-title">Chi tiết liên kết</span>
+        </div>
+        <div class="md-pot_body">
+          <div class="create_connection_container detail_connection_container">
+            <div class="detail_connection">
+              <div class="link_connection">
+                <span class="font600 endeavour">mfast.vn/thuthap/11313123</span>
+                <div class="counter_user direction-row align-center">
+                  <span>Đang kích hoạt</span>
+                  <div class="custom_checkbox ml5">
+                    <label for="cb_active">
+                      <input type="checkbox" checked="">
+                      <span class="check_mart"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="customer_link_action">
+                <a href="javascript:void(0)" class="btn-copy_to_clipboard"><img src="./assets/images/ico-file-white.svg" alt=""> Copy link</a>
+                <a href="#" class="kelly_green"><img src="./assets/images/ico-arrow-right-rectangle.svg" alt=""> Truy cập</a>
+              </div>
+            </div>
+            <div class="customer_collect_count">
+              <div class="collect_count">
+                <div class="counter_user">
+                  <span class="font14">Đã vào xem</span>
+                  <p class="font16"><span class="font600">1000</span> người</p>
+                </div>
+                <div class="counter_user">
+                  <span class="font14">Đã điền thông tin</span>
+                  <p class="endeavour font16"><span class="font600">100</span> người</p>
+                </div>
+              </div>
+            </div>
+            <span>Mô tả trang:</span>
+            <p>Là tiêu đề để giúp khách hàng hiểu mục đích của trang</p>
+            <div class="connection_online">
+              <textarea name="" id="" cols="30" rows="2"></textarea>
+              <!-- <span>Đăng ký nhu cầu cần tư vấn các sản phẩm tài chính và bảo hiểm</span> -->
+            </div>
+            <span>Nhãn khách hàng:</span>
+            <p>Giúp bạn nhận biết nguồn gốc khách hàng tại trang Tệp khách hàng</p>
+            <div class="connection_online">
+              <input type="text" placeholder="Liên kết online">
+              <!-- <span>Liên kết online</span> -->
+            </div>
+            <span class="">Định hướng khách hàng</span>
+            <p>Chọn nhu cầu khách hàng cần thu thập thông tin</p>
+            <div class="form-create_connection">
+              <form action="" class="frm_create_conn">
+                <div class="grp_checked_parent">
+                  <div class="custom_checkbox custom_checkbox_rectangle">
+                    <label for="">
+                      <input type="checkbox" class="js-check_par" data-target="radio_counselors" checked>
+                      <span>Khách hàng có nhu cầu vay</span>
+                      <span class="check_remart"></span>
+                    </label>
+                  </div>
+                  <div class="custom_checkbox custom_radio_circle check_val_child">
+                    <label for="">
+                      <input type="radio" name="radio_1" class="js-check" data-check="check_option_1" data-radio="radio_counselors" checked>
+                      <span>Chuyển về cho tôi tự tư vấn</span>
+                      <span class="check_remart"></span>
+                    </label>
+                  </div>
+                  <div class="custom_checkbox custom_radio_circle check_val_child">
+                    <label for="">
+                      <input type="radio" name="radio_1" class="js-check js-toggle_modal" data-check="check_option_2" data-radio="radio_counselors" data-target="md-counselors">
+                      <span>Gửi cho MFast tự chỉ định người tư vấn</span>
+                      <span class="check_remart"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="grp_checked_parent">
+                  <div class="custom_checkbox custom_checkbox_rectangle">
+                    <label for="">
+                      <input type="checkbox" checked>
+                      <span>Khách hàng có nhu cầu mua bảo hiểm</span>
+                      <span class="check_remart"></span>
+                    </label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <button class="btn-create_connection btn_disabled">Cập nhật thông tin</button>
+            <div class="d-flex process_on_link">
+              <a href="#" class="btn-review_connection js-close_modal">Quay lại</a>
+              <a href="#" class="btn-review_connection">Xem thử liên kết</a>
+            </div>
+            <input type="button" value="Xóa link này" class="fire_engine_red btn-exit_filter js-toggle_modal" data-target="md-delete_connection">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal chi tiết liên kết -->
+
+    <!-- modal nhắc nhở chọn người tư vấn -->
+    <div class="js-modal modal-counselors" data-modal="md-counselors">
+      <div class="md_over"></div>
+      <div class="md_content">
+        <div class="md_body">
+          <div class="message_selector">
+            <img src="./assets/images/ico-notification.svg" alt="">
+            <p>Khi chọn <span class="tenne_tawny">“Hồ sơ do MFast tự chỉ định người tư vấn”</span>, khách hàng đến từ liên kết này sẽ tự động chuyển đến cho tư vấn viên của MFast. Khi đó, bạn sẽ nhận hoa hồng với nghiệp vụ "giới thiệu khách hàng có nhu cầu”</p>
+            <p class="topaz">Bạn vẫn có thể xem, quản lý các khách hàng này tại mục “Đang xử lý” tại trang “Tệp khách hàng” hoặc trong mục “Tài chính”</p>
+          </div>
+          <div class="select_counselors_content js-select_counselors">
+            <a href="javascript:void(0)" data-radio_check="check_option_1">Tự tư vấn</a>
+            <a href="javascript:void(0)" data-radio_check="check_option_2" class="kelly_green">Để MFast chỉ định</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END modal nhắc nhở chọn người tư vấn -->
+
+    <!-- modal xóa liên kết -->
+    <div class="js-modal modal-counselors" data-modal="md-delete_connection">
+      <div class="md_over"></div>
+      <div class="md_content">
+        <div class="md_body">
+          <div class="message_selector">
+            <img src="./assets/images/ico-notification.svg" alt="">
+            <p>Sau khi xóa, liên kết sẽ không thể truy cập được nữa. Tuy nhiên, thông tin khách hàng cũ đến từ liên kết này không bị ảnh hưởng.</p>
+          </div>
+          <div class="select_counselors_content">
+            <a href="javascript:void(0)">Xóa link</a>
+            <a href="javascript:void(0)" class="kelly_green js-close_modal">Quay lại</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END modal xóa liên kết -->
+
+    <!-- modal waiting -->
+    <div id="mf-loading" class="mf_loading">
+      <div class="mf-loading_content">
+        <p>
+          <img height="32" src="./assets/images/ico-mfast.svg" alt="">
+        </p>
+        <p>
+          <img class="mf-icon_loading" src="./assets/images/loading.svg" alt="">
+        </p>
+        <p class="mf-loading_desc">Hệ thống đang xử lý vui lòng đợi trong giây lát...</p>
+      </div>
+    </div>
+    <!-- END modal waiting -->
+  </div>
+
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

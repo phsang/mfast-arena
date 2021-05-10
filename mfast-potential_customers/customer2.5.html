@@ -30,22 +30,20 @@
                   <form action="" class="frm-customer_filter">
                     <div class="frm_group">
                       <label for="province">Lọc theo Tỉnh / Thành phố</label>
-                      <div class="select_text_center">
-                        <select name="province" id="province">
-                          <option value="">- Tỉnh / Thành Phố -</option>
-                          <option value="0">- Hồ Chí Minh (6) -</option>
-                          <option value="1">- Đà Nẵng (4) -</option>
-                        </select>
+                      <div class="custom_option_mobile" id="province">
+                        <input type="hidden" name="province"></input>
+                        <div class="option_value js-toggle_modal" data-target="md-province">
+                          <span>- Tỉnh / Thành phố -</span>
+                        </div>
                       </div>
                     </div>
                     <div class="frm_group">
                       <label for="district">Lọc theo Quận / Huyện</label>
-                      <div class="select_text_center">
-                        <select name="district" id="district">
-                          <option value="">- Tất cả Quận / Huyện (6) -</option>
-                          <option value="0">- Quận 1 (4) -</option>
-                          <option value="1">- Thủ Đức (2) -</option>
-                        </select>
+                      <div class="custom_option_mobile" id="district">
+                        <input type="hidden" name="district"></input>
+                        <div class="option_value js-toggle_modal" data-target="md-district">
+                          <span>- Quận / Huyện -</span>
+                        </div>
                       </div>
                     </div>
                     <div class="frm_group filter_extension">
@@ -493,6 +491,41 @@
     </div>
   </div>
   <!-- END Modal new cutomer -->
+
+  <!-- modal province -->
+  <div class="js-modal modal-counselors" data-modal="md-province">
+    <div class="md_over"></div>
+    <div class="md_content">
+      <div class="md_body">
+        <div class="search_option_container">
+          <label for="">Tỉnh / TP</label>
+          <input type="text" class="js-search_option search_option" placeholder="Tìm theo tên">
+        </div>
+        <div class="option_list js-list_option">
+          <span class="option_value_item active" data-val="Hồ Chí Minh (6)">Hồ Chí Minh (6)</span>
+          <span class="option_value_item" data-val="Đà Nẵng (4)">Đà Nẵng (4)</span>
+          <span class="option_value_item" data-val="Cao Bằng (6)">Cao Bằng (6)</span>
+          <span class="option_value_item" data-val="Bắc Cạn (4)">Bắc Cạn (4)</span>
+          <span class="option_value_item" data-val="Lạng sơn (6)">Lạng sơn (6)</span>
+          <span class="option_value_item" data-val="Yên bái (4)">Yên bái (4)</span>
+          <span class="option_value_item" data-val="Hồ Chí Minh (6)">Hồ Chí Minh (6)</span>
+          <span class="option_value_item" data-val="Đà Nẵng (4)">Đà Nẵng (4)</span>
+          <span class="option_value_item" data-val="Hồ Chí Minh (6)">Hồ Chí Minh (6)</span>
+          <span class="option_value_item" data-val="Đà Nẵng (4)">Đà Nẵng (4)</span>
+          <span class="option_value_item" data-val="Hồ Chí Minh (6)">Hồ Chí Minh (6)</span>
+          <span class="option_value_item" data-val="Đà Nẵng (4)">Đà Nẵng (4)</span>
+          <span class="option_value_item" data-val="Hồ Chí Minh (6)">Hồ Chí Minh (6)</span>
+          <span class="option_value_item" data-val="Đà Nẵng (4)">Đà Nẵng (4)</span>
+          <span class="option_value_item" data-val="Hồ Chí Minh (6)">Hồ Chí Minh (6)</span>
+          <span class="option_value_item" data-val="Đà Nẵng (4)">Đà Nẵng (4)</span>
+        </div>
+        <div class="js-select_option">
+          <button class="btn-submit" data-target="province">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END modal province -->
 
   <script src="./assets/js/app.js"></script>
 </body>

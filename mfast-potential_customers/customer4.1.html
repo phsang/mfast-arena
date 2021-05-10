@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="potential_customer_new">
+      <div class="potential_customer_slide">
+        <div class="pot_slide_item">
+          <img src="./assets/images/img-slide-1.jpg" alt="">
+        </div>
+        <div class="pot_slide_item">
+          <img src="./assets/images/img-slide-1.jpg" alt="">
+        </div>
+        <div class="pot_slide_item">
+          <img src="./assets/images/img-slide-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="brand_support_container">
+        <p><span class="font500 endeavour">Ngân hàng và công ty Tài chính</span> hỗ trợ:</p>
+        <div class="brand_support_list">
+          <div class="brand_support_item">
+            <img src="./assets/images/ico-mcredit.png" alt="">
+          </div>
+          <div class="brand_support_item">
+            <img src="./assets/images/ico-easycredit.png" alt="">
+          </div>
+          <div class="brand_support_item">
+            <img src="./assets/images/ico-cimb.png" alt="">
+          </div>
+          <div class="brand_support_item">
+            <img src="./assets/images/ico-cash24.png" alt="">
+          </div>
+          <div class="brand_support_item">
+            <img src="./assets/images/ico-easycredit.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="potential_customer_form">
+      <h3>Thông tin cơ bản</h3>
+      <div class="potential_customer_form_ttl">
+        <p class="font500 endeavour">Nhập thông tin nhu cầu theo mẫu bên dưới để được tư vấn tham gia sản phẩm phù hợp nhất với bạn</p>
+      </div>
+      <div class="potential_customer_form__content">
+        <form action="">
+          <div class="frm_group float_label">
+            <input type="text" id="name">
+            <label for="name">Họ và tên <span class="fire_engine_red">*</span></label>
+          </div>
+          <div class="d-flex">
+            <div class="frm_group float_label">
+              <input type="number" id="phone">
+              <label for="phone">Số điện thoại <span class="fire_engine_red">*</span></label>
+            </div>
+            <div class="frm_group">
+              <div class="custom_checkbox custom_radio_circle">
+                <label for="">
+                  <input type="radio" name="radio_1" checked="checked">
+                  <span>Nam</span>
+                  <span class="check_remart"></span>
+                </label>
+              </div>
+              <div class="custom_checkbox custom_radio_circle">
+                <label for="">
+                  <input type="radio" name="radio_1">
+                  <span>Nữ</span>
+                  <span class="check_remart"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="frm_group float_label">
+            <input type="number" id="">
+            <label for="name">CMND / CCCD <span class="fire_engine_red">*</span></label>
+          </div>
+          <div class="frm_group">
+            <div class="md-province_district">
+              <input type="hidden" name="">
+              <div class="js-toggle_modal option_value" data-target="md-province"><span>Huyện / Tỉnh (Quận / TP)</span> <span class="fire_engine_red">*</span></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="relate_insurance">
+      <h3>Sản phẩm liên quan</h3>
+      <div class="relate_insurance_content">
+        <div class="relate_insurance_tabs">
+          <div class="insurance_tabs_head">
+            <button class="insurance_tab_btn finance_tab_btn">Tài chính</button>
+            <button class="insurance_tab_btn">Bảo hiểm</button>
+          </div>
+          <div class="insurance_tabs_body"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal province-district -->
+  <div class="js-modal modal-counselors" data-modal="md-province">
+    <div class="md_over"></div>
+    <div class="md_content">
+      <div class="md_body">
+        <div class="select_option_container">
+          <label for="">Tỉnh / TP</label>
+          <select name="province">
+            <option value="0">TP.Hồ Chí Minh</option>
+            <option value="0">Cao Bằng</option>
+            <option value="0">Bắc Cạn</option>
+            <option value="0">Lạng Sơn</option>
+          </select>
+        </div>
+        <div class="select_option_container">
+          <label for="">Quận / Huyện</label>
+          <select name="district">
+            <option value="0">Lai Châu</option>
+            <option value="0">Sơn La</option>
+            <option value="0">Điện Biên</option>
+            <option value="0">Mộc Bài</option>
+          </select>
+        </div>
+        <div class="js-select_option">
+          <button class="btn-submit" data-target="province">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END modal province-district -->
+
+  <script src="./assets/js/app.js"></script>
+  <script>
+    $('.potential_customer_slide').slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // autoplay: true,
+      autoplaySpeed: 3000
+    });
+  </script>
+</body>
+
+</html>
