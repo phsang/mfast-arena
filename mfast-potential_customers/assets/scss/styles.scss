@@ -2,15 +2,14 @@ $stdScreen: 375;
 $stdScreen2: 414; // iphone 7, 8 plus
 
 @function px2vw($val) {
-  $result: (100 / $stdScreen * $val);
-  $result2: ($stdScreen2 / $stdScreen * $result);
-  $_px: ($result2 * $stdScreen2 / 100);
+  $_vw: ($val * 100 / $stdScreen)+vw;
+  $_px: ($val * $stdScreen2 / $stdScreen)+px;
   @if $val > 0 {
-    @return #{"min(#{$_px+px}, #{$result+vw})"};
+    @return #{"min(#{$_px}, #{$_vw})"};
   } @else {
-    @return #{"max(#{$_px+px}, #{$result+vw})"};
+    @return #{"max(#{$_px}, #{$_vw})"};
   }
-  // @return $result+vw;
+  // @return $_vw;
 }
 
 @import "lib/_fonts.scss";
@@ -641,10 +640,12 @@ body.show_modal {
   margin-top: px2vw(5);
 }
 .customer_card_phone span {
+  color: #24253d;
   margin-left: px2vw(35);
-  &:first-child {
-    margin-left: 0;
-  }
+  text-decoration: none;
+}
+.customer_card_phone span:first-child {
+  margin-left: 0;
 }
 .customer_card_phone img {
   margin-right: px2vw(10);

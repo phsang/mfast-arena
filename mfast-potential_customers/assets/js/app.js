@@ -1,31 +1,34 @@
 let potential = (function () {
   function potential() {
   }
+  const _atClass = 'active';
   // toggle modal
   potential.prototype.toggleModal = function () {
-    let _acTClass = 'active';
-    $('.js-toggle_modal').click(function (e) {
+    let _jsModal = $('.js-toggle_modal');
+    let _bodyMd = 'show_modal';
+    _jsModal.click(function (e) {
       e.preventDefault();
-      $(this).toggleClass(_acTClass);
+      $(this).toggleClass(_atClass);
       let _target = $(this).attr('data-target');
-      $('.js-modal[data-modal="' + _target + '"]').toggleClass(_acTClass);
-      $('html, body').addClass('show_modal');
+      $('.js-modal[data-modal="' + _target + '"]').toggleClass(_atClass);
+      $('html, body').addClass(_bodyMd);
     });
     $('.call_customer').click(function () {
       return false;
     });
     $('.md_over, .js-close_modal').click(function () {
-      $('html, body').removeClass('show_modal');
-      $(this).closest('.js-modal').removeClass(_acTClass);
-      $('.js-toggle_modal').removeClass(_acTClass);
+      $('html, body').removeClass(_bodyMd);
+      $(this).closest('.js-modal').removeClass(_atClass);
+      _jsModal.removeClass(_atClass);
     });
   };
   // toggle tabs
   potential.prototype.toggleTabs = function () {
-    $('.js-tab_menu_item').click(function (e) {
+    let _menuItem = $('.js-tab_menu_item');
+    _menuItem.click(function (e) {
       e.preventDefault();
-      $('.js-tab_menu_item').removeClass('active');
-      $(this).addClass('active');
+      _menuItem.removeClass(_atClass);
+      $(this).addClass(_atClass);
       let _target = $(this).attr('data-target');
       $('.js-tab_content').fadeOut();
       $('.js-tab_content[data-tab="' + _target + '"]').fadeIn();
@@ -56,11 +59,11 @@ let potential = (function () {
   // custom select_option mobile
   potential.prototype.customSelectOption = function () {
     $('body').on('click', '.option_value_item', function() {
-      $('.option_value_item').removeClass('active');
-      $(this).addClass('active');
+      $('.option_value_item').removeClass(_atClass);
+      $(this).addClass(_atClass);
     });
     $('body').on('click', '.js-select_option button', function() {
-      $(this).closest('.js-modal').removeClass('active');
+      $(this).closest('.js-modal').removeClass(_atClass);
       let _val = $('.js-list_option .active').attr('data-val');
       let _target = $(this).attr('data-target');
       $('#' + _target).find('input').val(_val);
@@ -88,7 +91,7 @@ let potential = (function () {
   potential.prototype.checkRadioBox = function () {
     let _par = $('.js-select_counselors');
     _par.find('a').click(function() {
-      $(this).closest('.js-modal').removeClass('active');
+      $(this).closest('.js-modal').removeClass(_atClass);
       let _radio = $(this).attr('data-radio_check');
       $('.js-check').prop('checked', false);
       $('.js-check[data-check="' + _radio + '"]').prop('checked', true);
@@ -102,14 +105,13 @@ let potential = (function () {
       setTimeout(() => {
         $('.mf_loading').removeClass('in_process');
         let _par = $('.create_connection_on_step');
-        _par.animate({scrollLeft: _par.width()}, 400, function() {
-          // $(this).css('overflow-y', 'auto');
-        });
+        _par.animate({scrollLeft: _par.width()}, 400);
       }, 2000);
     });
   };
   // Validate input
   potential.prototype.validateInput = function (_lenght) {
+    _lenght = 0 | _lenght;
     $('.js-vali_input').on('keyup', function(){
       let _len = $(this).val().toString().length;
       if(_len > _lenght) {
