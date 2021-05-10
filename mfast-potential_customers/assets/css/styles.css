@@ -581,7 +581,7 @@ body.show_modal {
           transform-origin: right top;
   -webkit-transition: .4s;
   transition: .4s;
-  width: 250px;
+  width: 255px;
   z-index: 99; }
 
 .modal-modal_majors_note.active .md_content {
@@ -627,7 +627,7 @@ body.show_modal {
   margin: 0 0; }
 
 .majors_note_item .potential_brand_item img {
-  max-height: 4vw; }
+  max-height: 3.73333vw; }
 
 .note_list_customer {
   -webkit-box-align: center;
@@ -771,6 +771,8 @@ body.show_modal {
 .insurance_list img {
   display: inline-block;
   height: 2.93333vw;
+  -o-object-fit: contain;
+     object-fit: contain;
   vertical-align: baseline; }
 
 .potential_customer__name {
@@ -2141,6 +2143,9 @@ a.disabled {
   width: 100%; }
 
 .search_option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #bcbcbc;
   border-radius: 1.06667vw;
   height: 8.53333vw;

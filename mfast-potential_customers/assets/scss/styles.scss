@@ -393,7 +393,7 @@ body.show_modal {
   transform: scale(0);
   transform-origin: right top;
   transition: .4s;
-  width: 250px;
+  width: 255px;
   z-index: 99;
 }
 .modal-modal_majors_note.active .md_content {
@@ -438,7 +438,7 @@ body.show_modal {
   margin: 0 0;
 }
 .majors_note_item .potential_brand_item img {
-  max-height: px2vw(15);
+  max-height: px2vw(14);
 }
 .note_list_customer {
   align-items: center;
@@ -549,7 +549,7 @@ body.show_modal {
   margin: px2vw(12) 0 0 px2vw(-15);
   width: calc(100% + #{px2vw(25)});
 }
-.potential_customer__info .insurance_list>p {
+.potential_customer__info .insurance_list > p {
   color: #424d6c;
   font-size: px2vw(13);
   line-height: 1;
@@ -558,6 +558,7 @@ body.show_modal {
 .insurance_list img {
   display: inline-block;
   height: px2vw(11);
+  object-fit: contain;
   vertical-align: baseline;
 }
 .potential_customer__name {
@@ -1702,6 +1703,7 @@ a.disabled {
   width: 100%;
 }
 .search_option {
+  appearance: none;
   border: 1px solid #bcbcbc;
   border-radius: px2vw(4);
   height: px2vw(32);
