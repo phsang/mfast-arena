@@ -188,6 +188,7 @@ body.show_modal {
 }
 
 .btn-submit {
+  appearance: none;
   background: #233a95;
   border: none;
   border-radius: 23px;
@@ -568,15 +569,15 @@ body.show_modal {
   top: px2vw(8);
 }
 .call_customer a {
+  align-items: center;
   color: #7c7c8b;
+  display: flex;
   font-size: px2vw(10);
   text-decoration: none;
 }
 .call_customer img {
-  display: inline-block;
   height: px2vw(24);
-  margin-left: px2vw(5);
-  vertical-align: middle;
+  margin-left: px2vw(7);
   width: px2vw(24);
 }
 .md_over {
