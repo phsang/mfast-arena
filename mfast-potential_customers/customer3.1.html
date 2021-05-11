@@ -23,6 +23,14 @@
           <span>Tạo 1 liên kết mới</span>
         </div>
       </div>
+      <div class="potential_search">
+        <form action="" class="frm-potential_search">
+          <div class="frm_group float_icon_left">
+            <img src="./assets/images/ico-search.png" alt="">
+            <input type="text" class="frm_control" placeholder="Tìm theo tên, Sđt khách hàng">
+          </div>
+        </form>
+      </div>
       <div class="pot_customers__body">
         <div class="note_list_customer">
           <span>CÁC LINK ĐÃ TẠO:</span>
@@ -76,7 +84,7 @@
             <div class="customer_link_action">
               <a href="" class="kelly_green"><img src="./assets/images/ico-edit.svg" alt=""> Chỉnh sửa</a>
               <a href="" class="kelly_green"><img src="./assets/images/ico-arrow-right-rectangle.svg" alt=""> Truy cập</a>
-              <a href="javascript:void(0)" class="btn-copy_to_clipboard"><img src="./assets/images/ico-file-white.svg" alt=""> Copy link</a>
+              <a href="javascript:void(0)" class="btn-copy_to_clipboard" data-link="mfast.vn/thuthap/11313123"><img src="./assets/images/ico-file-white.svg" alt=""> Copy link</a>
             </div>
           </div>
           <div class="link_customer_active_item dead_link">
@@ -355,7 +363,7 @@
     <!-- END modal xóa liên kết -->
 
     <!-- modal waiting -->
-    <div id="mf-loading" class="mf_loading">
+    <div id="mf-loading" class="js-mf_loading mf_loading">
       <div class="mf-loading_content">
         <p>
           <img height="32" src="./assets/images/ico-mfast.svg" alt="">
@@ -367,6 +375,17 @@
       </div>
     </div>
     <!-- END modal waiting -->
+
+    <!-- copy to clipboard -->
+    <div class="mf_loading copy2_clipboard">
+      <div class="mf-loading_content">
+        <p>
+          <img height="32" src="./assets/images/ico-mfast.svg" alt="">
+        </p>
+        <p class="mf-loading_desc">Liên kết đã được sao chép đến clipboard...</p>
+      </div>
+    </div>
+    <!-- END copy to clipboard -->
   </div>
 
   <script src="./assets/js/app.js"></script>

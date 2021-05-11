@@ -101,9 +101,9 @@ let potential = (function () {
   potential.prototype.createConnection = function () {
     let _btn = $('.js-create_connection');
     _btn.click(function() {
-      $('.mf_loading').addClass('in_process');
+      $('.js-mf_loading').addClass('in_process');
       setTimeout(() => {
-        $('.mf_loading').removeClass('in_process');
+        $('.js-mf_loading').removeClass('in_process');
         let _par = $('.create_connection_on_step');
         _par.animate({scrollLeft: _par.width()}, 400);
       }, 2000);
@@ -121,6 +121,27 @@ let potential = (function () {
       }
     });
   };
+  // mortgage toggle slide
+  potential.prototype.mortgageToggle = function (_lenght) {
+    $('.mortgage_kind_item_head').click(function() {
+      $(this).toggleClass(_atClass);
+      $(this).next('.mortgage_kind_item_body').slideToggle();
+    });
+  };
+  // copy to clipboard
+  potential.prototype.copyToClipboard = function (_lenght) {
+    $('.btn-copy_to_clipboard').click(function() {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(this).attr('data-link')).select();
+      document.execCommand("copy");
+      $temp.remove();
+      $('.copy2_clipboard').addClass('in_process');
+      setTimeout(() => {
+        $('.copy2_clipboard').removeClass('in_process');
+      }, 3000);
+    });
+  };
   return potential;
 }());
 
@@ -132,3 +153,5 @@ _potential.customSelectOption();
 _potential.checkRadioBox();
 _potential.createConnection();
 _potential.validateInput(24);
+_potential.mortgageToggle();
+_potential.copyToClipboard();

@@ -639,13 +639,17 @@ body.show_modal {
   display: flex;
   margin-top: px2vw(5);
 }
-.customer_card_phone span {
-  color: #24253d;
-  margin-left: px2vw(35);
+a[href^="tel"] {
+  color: inherit;
   text-decoration: none;
 }
-.customer_card_phone span:first-child {
-  margin-left: 0;
+.customer_card_phone span {
+  color: #24253d;
+  text-decoration: none;
+}
+.customer_card_phone a {
+  margin-left: px2vw(35);
+  text-decoration: none;
 }
 .customer_card_phone img {
   margin-right: px2vw(10);
@@ -1578,7 +1582,7 @@ a.disabled {
   margin: 0 px2vw(16);
   opacity: 0;
   padding: 0 px2vw(14);
-  position: absolute;
+  position: fixed;
   text-align: center;
   top: 15vh;
   transform: scale(0);
@@ -1867,3 +1871,131 @@ a.disabled {
 .brand_support_item:last-child img {
   margin-right: px2vw(16);
 }
+
+/* customer screen_4.7 */
+.modal-mortgage_kind .md-head,
+.modal-mortgage_kind .md-content {
+  border-radius: px2vw(26) px2vw(26) 0 0;
+}
+.mortgage_kind_container > p {
+  color: #505164;
+  margin: px2vw(7) 0 px2vw(12);
+  padding: 0 px2vw(16);
+}
+.mortgage_kind_list {
+  padding: 0 px2vw(16);
+}
+.mortgage_kind_item {
+  border: 1px solid #cfd3d6;
+  border-radius: px2vw(10);
+  margin-top: px2vw(15);
+  &:first-child {
+    margin-top: 0;
+    .mortgage_kind_item_body {
+      display: block;
+    }
+  }
+}
+.mortgage_kind_item_head {
+  align-items: center;
+  background: #eee;
+  border-radius: px2vw(10);
+  display: flex;
+  height: px2vw(50);
+  justify-content: space-between;
+  padding: px2vw(5) px2vw(14);
+  transition: .3s;
+}
+.mortgage_kind_item_head.active {
+  border-radius: px2vw(10) px2vw(10) 0 0;
+  transition: .3s;
+}
+.mortgage_kind_item_head.active .btn-expand_brand_list::after {
+  transform: rotate(0);
+  transition: .3s;
+}
+.mortgage_kind_item_head>h4 {
+  font-size: px2vw(16);
+  margin: 0;
+}
+.mortgage_kind_item_body {
+  display: none;
+  max-height: px2vw(340);
+  overflow-y: auto;
+  padding-top: px2vw(12);
+}
+.mortgage_kind_item_body .brand_filter {
+  border-bottom: 1px solid #cfd3d6;
+  margin-top: 0;
+  padding: 0 0 px2vw(13) px2vw(14);
+}
+.mortgage_brand_list {
+  padding: px2vw(11) px2vw(14);
+}
+.mortgage_brand_item {
+  border-bottom: 1px solid #cfd3d6;
+  padding: px2vw(11) px2vw(15) px2vw(9) 0;
+  position: relative;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+  &:after {
+    background: url("../images/ico-arrow-right.svg") no-repeat 0 0 / contain;
+    content: "";
+    height: px2vw(20);
+    position: absolute;
+    right: 0;
+    top: calc(50% - #{px2vw(10)});
+    width: px2vw(20);
+  }
+}
+.mortgage_brand_item>h5 {
+  font-weight: normal;
+  margin: 0;
+}
+.mortgage_brand_item>h5 img {
+  max-height: 14px;
+  max-width: 60px;
+  object-fit: contain;
+}
+.mortgage_brand_item>p {
+  color: #505164;
+  font-size: 12px;
+  line-height: 1.33;
+  margin: px2vw(2) 0 px2vw(4) px2vw(23);
+  text-indent: px2vw(-23);
+}
+.mortgage_brand_item>p img {
+  display: inline-block;
+  margin-right: px2vw(3);
+  max-height: 16px;
+  max-width: 16px;
+  object-fit: contain;
+  vertical-align: sub;
+}
+.btn-expand_brand_list {
+  background: #29a93b;
+  border: none;
+  border-radius: 50%;
+  height: px2vw(24);
+  position: relative;
+  width: px2vw(24);
+  &::before,
+  &::after {
+    border-top: 1px solid #fff;
+    content: "";
+    left: px2vw(5);
+    position: absolute;
+    top: calc(50% - #{px2vw(0.5)});
+    transition: .3s;
+    width: px2vw(14);
+  }
+  &:after {
+    transform: rotate(90deg);
+    transition: .3s;
+  }
+}
+/* END customer screen_4.7 */
