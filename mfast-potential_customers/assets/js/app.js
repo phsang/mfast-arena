@@ -10,8 +10,18 @@ let potential = (function () {
       e.preventDefault();
       $(this).toggleClass(_atClass);
       let _target = $(this).attr('data-target');
+      let _scroll = $(this).attr('data-scroll') || false;
       $('.js-modal[data-modal="' + _target + '"]').toggleClass(_atClass);
-      $('html, body').addClass(_bodyMd);
+      if(_scroll != 'scroll') {
+        $('html, body').addClass(_bodyMd);
+      }
+      if($(this).parents('.md-pot_content').length) {
+        $('.md-pot_content').animate({
+          scrollTop: 0
+        }, 400, function() {
+          $(this).css('overflow', 'hidden');
+        });
+      }
     });
     $('.call_customer').click(function () {
       return false;
@@ -20,6 +30,7 @@ let potential = (function () {
       $('html, body').removeClass(_bodyMd);
       $(this).closest('.js-modal').removeClass(_atClass);
       _jsModal.removeClass(_atClass);
+      $('.md-pot_content').css('overflow', 'auto');
     });
   };
   // toggle tabs
@@ -112,7 +123,7 @@ let potential = (function () {
   // Validate input
   potential.prototype.validateInput = function (_lenght) {
     _lenght = 0 | _lenght;
-    $('.js-vali_input').on('keyup', function(){
+    $('.js-vali_input').on('input', function(){
       let _len = $(this).val().toString().length;
       if(_len > _lenght) {
         $(this).val($(this).val().toString().slice(0, -1));
@@ -129,7 +140,7 @@ let potential = (function () {
     });
   };
   // copy to clipboard
-  potential.prototype.copyToClipboard = function (_lenght) {
+  potential.prototype.copyToClipboard = function () {
     $('.btn-copy_to_clipboard').click(function() {
       var $temp = $("<input>");
       $("body").append($temp);

@@ -150,15 +150,15 @@
               <div class="potential_search">
                 <form action="" class="frm-potential_search">
                   <div class="frm_group float_icon_left">
-                    <img src="./assets/images/ico-search.png" alt="">
                     <input type="text" class="frm_control" placeholder="Tìm theo tên, Sđt khách hàng">
+                    <span class="remark_icon"></span>
                   </div>
                 </form>
               </div>
               <div class="note_list_customer">
                 <span>DS KH và dự án đã từng tham gia</span>
                 <div class="majors_note">
-                  <button type="button" class="js-toggle_modal btn-modal_majors_note" data-target="md_note">Chú thích</button>
+                  <button type="button" class="js-toggle_modal btn-modal_majors_note" data-target="md_note" data-scroll="scroll">Chú thích</button>
                   <div class="js-modal modal-modal_majors_note" data-modal="md_note">
                     <div class="md_over"></div>
                     <div class="md_content">
@@ -397,6 +397,7 @@
 
   <div class="connect_to_customer">
     <a href="#" class="connect_to_customer_link">
+      Liên kết khách hàng
       <span class="circle_connect_book"></span>
       <img src="./assets/images/btn-connect-to-customer.png" alt="">
     </a>
@@ -428,7 +429,30 @@
               <p><img src="./assets/images/ico-pti.png" alt=""> - Bảo an tín dụng</p>
             </div>
             <div class="pot_brand__note">
-              <a href="javascript:void(0)">Chú thích <img src="./assets/images/ico-info-screen.svg" alt=""></a>
+              <div class="majors_note">
+                <button type="button" class="js-toggle_modal btn-modal_majors_note" data-target="md_note2">Chú thích</button>
+                <div class="js-modal modal-modal_majors_note" data-modal="md_note2">
+                  <div class="md_over"></div>
+                  <div class="md_content">
+                    <div class="md_body">
+                      <div class="majors_note_list">
+                        <div class="majors_note_item">
+                          <div class="potential_brand_item active_waiting"><img src="./assets/images/ico-mcredit.png" alt=""></div>
+                          <p>Dự án có biểu tượng <img src="./assets/images/ico-waiting.svg" alt=""> ý nghĩa <span class="tenne_tawny">vẫn đang trong quá trình xử lý</span>.</p>
+                        </div>
+                        <div class="majors_note_item">
+                          <div class="potential_brand_item active_error"><img src="./assets/images/ico-easycredit.png" alt=""></div>
+                          <p>Dự án có biểu tượng <img src="./assets/images/ico-error.svg" alt=""> ý nghĩa <span class="fire_engine_red">dự án đã thất bại</span>.</p>
+                        </div>
+                        <div class="majors_note_item">
+                          <div class="potential_brand_item"><img src="./assets/images/ico-cimb.png" alt="">&nbsp;/&nbsp;<img src="./assets/images/ico-bsh.png" alt="">&nbsp;- Tai nạn giao thông</div>
+                          <p>Dự án không có biểu tượng là các dự án <span class="watercourse">đã thành công</span>.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
