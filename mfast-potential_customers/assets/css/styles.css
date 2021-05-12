@@ -431,7 +431,7 @@ body.show_modal {
   margin-right: min(5.52px, 1.33333vw); }
 
 .pot_customers__tabs {
-  margin-top: min(17.664px, 4.26667vw); }
+  margin-top: min(19.872px, 4.8vw); }
 
 .pot_customers__tabs_head {
   -webkit-box-align: center;
@@ -452,7 +452,8 @@ body.show_modal {
       -ms-flex: 1 0 0px;
           flex: 1 0 0;
   font-size: min(15.456px, 3.73333vw);
-  padding: 0 0 min(11.04px, 2.66667vw); }
+  line-height: 1;
+  padding: 0 0 min(13.248px, 3.2vw); }
 
 .pot_customers__tabs_head .tab_menu_item.active {
   border-color: #39b818;
@@ -554,6 +555,9 @@ body.show_modal {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #fff !important;
   border: 1px solid #fff;
   border-radius: min(22.08px, 5.33333vw) !important;

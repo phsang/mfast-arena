@@ -286,7 +286,7 @@ body.show_modal {
   margin-right: px2vw(5);
 }
 .pot_customers__tabs {
-  margin-top: px2vw(16);
+  margin-top: px2vw(18);
 }
 .pot_customers__tabs_head {
   align-items: center;
@@ -301,7 +301,8 @@ body.show_modal {
   color: #757584;
   flex: 1 0 0;
   font-size: px2vw(14);
-  padding: 0 0 px2vw(10);
+  line-height: 1;
+  padding: 0 0 px2vw(12);
 }
 .pot_customers__tabs_head .tab_menu_item.active {
   border-color: #39b818;
@@ -380,6 +381,7 @@ body.show_modal {
 }
 .potential_search .frm_control {
   align-items: center;
+  appearance: none;
   background-color: #fff !important;
   border: 1px solid #fff;
   border-radius: px2vw(20) !important;
