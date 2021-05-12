@@ -289,7 +289,7 @@ body.show_modal {
   margin-top: px2vw(18);
 }
 .pot_customers__tabs_head {
-  align-items: center;
+  align-items: flex-end;
   border-bottom: 1px solid #cfd3d6;
   display: flex;
   width: 100%;
@@ -346,7 +346,7 @@ body.show_modal {
   color: #757584;
   display: flex;
   font-size: px2vw(12);
-  margin-top: px2vw(12);
+  margin-top: px2vw(10);
   padding: 0 0 0 px2vw(16);
   white-space: nowrap;
 }
@@ -486,7 +486,7 @@ body.show_modal {
   justify-content: space-between;
   line-height: 1;
   margin: px2vw(16) 0 px2vw(10);
-  padding: 0 px2vw(16);
+  padding: 0 px2vw(10) 0 px2vw(16);
 }
 .note_list_customer > span {
   color: #787886;
@@ -522,7 +522,7 @@ body.show_modal {
 .potential_customer__item {
   background: #fff;
   margin-bottom: px2vw(16);
-  padding: px2vw(12) px2vw(12) px2vw(5) px2vw(42);
+  padding: px2vw(12) px2vw(12) px2vw(6) px2vw(42);
   position: relative;
   &:last-child {
     margin-bottom: 0;
@@ -533,7 +533,7 @@ body.show_modal {
   border: none;
   border-radius: 50%;
   height: px2vw(20);
-  left: px2vw(16);
+  left: px2vw(12);
   padding: 0;
   position: absolute;
   width: px2vw(20);
@@ -699,7 +699,7 @@ a[href^="tel"] {
 .potential_customer__info p {
   letter-spacing: 0;
   line-height: 1.4;
-  margin: px2vw(3) 0 0;
+  margin: px2vw(4) 0 0;
 }
 .customer_location img {
   height: px2vw(21);

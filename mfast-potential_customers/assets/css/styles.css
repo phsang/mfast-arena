@@ -434,9 +434,9 @@ body.show_modal {
   margin-top: min(19.872px, 4.8vw); }
 
 .pot_customers__tabs_head {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   border-bottom: 1px solid #cfd3d6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,7 +515,7 @@ body.show_modal {
   display: -ms-flexbox;
   display: flex;
   font-size: min(13.248px, 3.2vw);
-  margin-top: min(13.248px, 3.2vw);
+  margin-top: min(11.04px, 2.66667vw);
   padding: 0 0 0 min(17.664px, 4.26667vw);
   white-space: nowrap; }
 
@@ -703,7 +703,7 @@ body.show_modal {
           justify-content: space-between;
   line-height: 1;
   margin: min(17.664px, 4.26667vw) 0 min(11.04px, 2.66667vw);
-  padding: 0 min(17.664px, 4.26667vw); }
+  padding: 0 min(11.04px, 2.66667vw) 0 min(17.664px, 4.26667vw); }
 
 .note_list_customer > span {
   color: #787886;
@@ -742,7 +742,7 @@ body.show_modal {
 .potential_customer__item {
   background: #fff;
   margin-bottom: min(17.664px, 4.26667vw);
-  padding: min(13.248px, 3.2vw) min(13.248px, 3.2vw) min(5.52px, 1.33333vw) min(46.368px, 11.2vw);
+  padding: min(13.248px, 3.2vw) min(13.248px, 3.2vw) min(6.624px, 1.6vw) min(46.368px, 11.2vw);
   position: relative; }
   .potential_customer__item:last-child {
     margin-bottom: 0; }
@@ -752,7 +752,7 @@ body.show_modal {
   border: none;
   border-radius: 50%;
   height: min(22.08px, 5.33333vw);
-  left: min(17.664px, 4.26667vw);
+  left: min(13.248px, 3.2vw);
   padding: 0;
   position: absolute;
   width: min(22.08px, 5.33333vw); }
@@ -950,7 +950,7 @@ a[href^="tel"] {
 .potential_customer__info p {
   letter-spacing: 0;
   line-height: 1.4;
-  margin: min(3.312px, 0.8vw) 0 0; }
+  margin: min(4.416px, 1.06667vw) 0 0; }
 
 .customer_location img {
   height: min(23.184px, 5.6vw);
