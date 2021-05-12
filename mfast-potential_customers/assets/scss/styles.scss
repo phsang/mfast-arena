@@ -299,8 +299,10 @@ body.show_modal {
   border-style: solid;
   border-width: 0 0 2px 0;
   color: #757584;
+  display: flex;
   flex: 1 0 0;
   font-size: px2vw(14);
+  justify-content: center;
   line-height: 1;
   padding: 0 0 px2vw(12);
 }
